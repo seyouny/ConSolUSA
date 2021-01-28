@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+// import '../public/favicon/.ico';
 import './App.css';
 
 function App() {
