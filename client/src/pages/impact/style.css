@@ -1,0 +1,10 @@
+.main {
+    height: 100vh;
+    display: block;
+    float: none;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}

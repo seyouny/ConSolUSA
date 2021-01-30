@@ -17,7 +17,6 @@ h1 {
             transform: translateX(-50%);
     top: 0;
     padding-top: .8rem;
-    /* padding-left: 7rem; */
     height: 3.75rem;
     line-height: 3.75rem;
     width: 100%;
@@ -68,7 +67,7 @@ h1 {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./header-photo.jpeg") 10% 30% no-repeat;
     background-size: cover;
     /* text-align: center; */
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     overflow: hidden;
