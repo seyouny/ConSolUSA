@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import Grid from '@material-ui/core/Grid';
-// import Logo from './logo_white.png';
+import logo from './logowhite.png';
 
 export default function NavHeader () {
 
@@ -32,16 +32,12 @@ export default function NavHeader () {
           <Grid item xs={2}>
             CONTACT
           </Grid>
+
         </Grid>
 
-        {/* <ul className="sticky-shrinknav-menu">
-          <li>PEOPLE</li>
-          <li>IMPACT</li>
-          <li>WORK</li>
-          <li>PARTNERS</li>
-          <li>NEWS</li>
-          <li>CONTACT</li>
-        </ul> */}
+        <div className="brand">
+        <img src={logo} alt="ConSol USA logo" width="35%"></img> 
+        </div>
 
       </header>
     </div>
