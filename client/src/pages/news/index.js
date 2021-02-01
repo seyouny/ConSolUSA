@@ -18,6 +18,9 @@ export default function NewsPage() {
 
             <Container className="main">
 
+            {/* BUILD ELEMENTS BELOW HERE. FEEL FREE TO EDIT THE ITEMS, JUST A TOOLKIT. */}
+
+
                 <Paper>
 
                     <Grid container spacing={1} className="sticky-shrinknav-menu">
