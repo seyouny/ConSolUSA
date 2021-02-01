@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
+import NavHeader from '../../components/navheader/';
 import './style.css';
 
 export default function ImpactPage () {
@@ -10,6 +11,8 @@ export default function ImpactPage () {
   return (
 
     <div>
+            <NavHeader></NavHeader>
+
                 <Container className="main">
 
                 <Paper>
