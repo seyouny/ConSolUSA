@@ -4,6 +4,10 @@ import './app.css';
 export default function Footer() {
 
   return (
+    <div>
+    <div className='pseudo'>
+        
+    </div>
     <div className="footer">
         <div className='row'>
             <div className='columnLeft'>
@@ -25,6 +29,7 @@ export default function Footer() {
                 <p>Twitter:</p>
             </div>
         </div>
+    </div>
     </div>
   );
 }
