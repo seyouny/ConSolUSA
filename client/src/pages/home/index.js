@@ -1,18 +1,17 @@
+// HOME/LANDING PAGE
+
 import React from 'react';
 import './style.css';
 import Grid from '@material-ui/core/Grid';
 import logo from './logowhite.png';
 import Border from './border-rt-bottom-orange.png';
 
-export default function HomePage () {
+export default function HomePage() {
 
   return (
 
     <div>
       <header className="hero">
-
-      {/* <h1 className="sticky-shrinknav-header-title">ConSol USA</h1> */}
-        {/* <Logo></Logo> */}
 
         <Grid container spacing={1} className="sticky-shrinknav-menu">
           <Grid item xs={2}>
@@ -34,13 +33,13 @@ export default function HomePage () {
             CONTACT
           </Grid>
 
-            <div className="herobrand">
-            <img src={logo} alt="ConSol USA logo" width="35%"></img> 
-            </div>
+          <div className="herobrand">
+            <img src={logo} alt="ConSol USA logo" width="35%"></img>
+          </div>
 
-            <div className="border">
-            <img src={Border} alt="border curve"></img> 
-            </div>
+          <div className="border">
+            <img src={Border} alt="border curve"></img>
+          </div>
 
         </Grid>
 
