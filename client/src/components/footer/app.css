@@ -7,6 +7,7 @@
     background-color: #164E85;
     text-align: center;
     color: white;
+    z-index: -1;
   }
 
 .row {
