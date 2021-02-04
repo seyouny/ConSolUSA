@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       {/* Landing Page */}
-      {/* <NavHeader></NavHeader> */}
-      <HomePage></HomePage>
+      <NavHeader></NavHeader>
+      {/* <HomePage></HomePage> */}
       {/* <ImpactPage></ImpactPage> */}
       <Footer></Footer>
       <Router>
