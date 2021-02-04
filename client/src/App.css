@@ -1,5 +1,10 @@
+p {
+  padding-top: 20px;
+}
+
 .App {
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -20,6 +25,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.submenu-button {
+  padding: 8px;
+  border-radius: 40px !important;
 }
 
 @keyframes App-logo-spin {

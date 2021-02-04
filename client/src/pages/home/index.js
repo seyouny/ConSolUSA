@@ -10,31 +10,12 @@ export default function HomePage() {
 
   return (
 
-    <div>
-      <header className="hero">
+    <div className="hero">
 
-        <Grid container spacing={1} className="sticky-shrinknav-menu">
-          <Grid item xs={2}>
-          <a href="/people">PEOPLE</a>
-          </Grid>
-          <Grid item xs={2}>
-          <a href="/impact">IMPACT</a>
-          </Grid>
-          <Grid item xs={2}>
-          <a href="/work">WORK</a>
-          </Grid>
-          <Grid item xs={2}>
-          <a href="/partners">PARTNERS</a>
-          </Grid>
-          <Grid item xs={2}>
-          <a href="/news">NEWS</a>
-          </Grid>
-          <Grid item xs={2}>
-          <a href="/contact">CONTACT</a>
-          </Grid>
+        <Grid container spacing={1}>
 
-          <div className="herobrand">
-            <img src={logo} alt="ConSol USA logo" width="35%"></img>
+          <div>
+            <img className="herobrand" src={logo} alt="ConSol USA logo"></img>
           </div>
 
           <div className="border">
@@ -43,7 +24,6 @@ export default function HomePage() {
 
         </Grid>
 
-      </header>
     </div>
 
   )
