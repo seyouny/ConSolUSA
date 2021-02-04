@@ -15,22 +15,22 @@ export default function HomePage() {
 
         <Grid container spacing={1} className="sticky-shrinknav-menu">
           <Grid item xs={2}>
-            PEOPLE
+          <a href="/people">PEOPLE</a>
           </Grid>
           <Grid item xs={2}>
-            IMPACT
+          <a href="/impact">IMPACT</a>
           </Grid>
           <Grid item xs={2}>
-            WORK
+          <a href="/work">WORK</a>
           </Grid>
           <Grid item xs={2}>
-            PARTNERS
+          <a href="/partners">PARTNERS</a>
           </Grid>
           <Grid item xs={2}>
-            NEWS
+          <a href="/news">NEWS</a>
           </Grid>
           <Grid item xs={2}>
-            CONTACT
+          <a href="/contact">CONTACT</a>
           </Grid>
 
           <div className="herobrand">
