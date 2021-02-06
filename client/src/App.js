@@ -1,35 +1,38 @@
-// import logo from './logo.svg';
-// import './App.css';
 import NavHeader from './components/navheader/';
-import ImpactPage from './pages/impact/';
 import HomePage from './pages/home/';
+import PeoplePage from './pages/people/';
+import ImpactPage from './pages/impact/';
+import WorkPage from './pages/work/';
+import PartnersPage from './pages/partners/';
+import NewsPage from './pages/news/';
+import ContactPage from './pages/contact/';
 import Footer from './components/footer/index';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-      {/* Landing Page */}
       <NavHeader></NavHeader>
-      {/* <HomePage></HomePage> */}
-      {/* <ImpactPage></ImpactPage> */}
-      <Footer></Footer>
+
       <Router>
-          {/* <Navigation /> */}
           <Switch>
 
-              {/* <Route exact path="/login" component={Splash}/> */}
-              <Route exact path="/people" component={Footer}/>
-              <Route exact path="/impact" component={Footer}/>
-              <Route exact path="/work" component={Footer}/>
-              <Route exact path="/partners" component={Footer}/>
-              <Route exact path="/news" component={Footer}/>
-              <Route exact path="/contact" component={Footer}/>
+              <Route exact path="/" component={HomePage}/>              
+              <Route exact path="/people" component={PeoplePage}/>
+              <Route exact path="/impact" component={ImpactPage}/>
+              <Route exact path="/work" component={WorkPage}/>
+              <Route exact path="/partners" component={PartnersPage}/>
+              <Route exact path="/news" component={NewsPage}/>
+              <Route exact path="/contact" component={ContactPage}/>
             </Switch>
       
         
           </Router>
+
+        <Footer></Footer>
+
     </div>
   );
 }

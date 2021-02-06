@@ -1,0 +1,25 @@
+h1 {
+    text-align: left;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 100%;
+    height: auto
+}
+
+.main {
+    margin-top: 40px
+}
+
+.padded-section {
+    padding: 40px;
+}
+
+.submenu {
+    text-align: center;
+    margin: 0 20% 0 20%;
+}
+
+
+
