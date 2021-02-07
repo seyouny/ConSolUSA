@@ -4,6 +4,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Banner from '../../components/banner/';
@@ -35,40 +36,87 @@ export default function WorkPage() {
 
                 </div>
 
-                {/* BUILD ELEMENTS BELOW HERE. FEEL FREE TO EDIT THE ITEMS, JUST A TOOLKIT. */}
+            </Container>
+            {/* BUILD ELEMENTS BELOW HERE. FEEL FREE TO EDIT THE ITEMS, JUST A TOOLKIT. */}
 
-                <div id="founderdiv">
 
-                    <Paper className="padded-section">
+    <Container className="proj-area">
 
-                        <Grid container spacing={1}>
+            <Typography
+                variant="h4"
+                className="proj-area-header"
+                style={{ textAlign: "center" }}
+            >
+                    Project Areas
+          </Typography>
 
-                            <Grid item xs={12}>
-
-                                <Typography variant="h3">Project Areas</Typography>
-                                <Typography variant="body1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    euismod in pellentesque. Pellentesque id nibh tortor id aliquet lectus proin.
-                                    Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Egestas
-                                    integer eget aliquet nibh praesent tristique. Imperdiet massa tincidunt nunc pulvinar sapien et.
-                                    Vel turpis nunc eget lorem dolor sed viverra. Montes nascetur ridiculus mus mauris vitae.
-                                    Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Ultricies mi quis hendrerit
-                                    dolor magna. Dolor morbi non arcu risus quis varius. Fames ac turpis egestas integer.
-                                    Amet nisl purus in mollis nunc sed. Neque viverra justo nec ultrices dui sapien eget
-                                    mi proin.
-                                </Typography>
-
-                            </Grid>
-
+                <Container className="proj-card-container">
+                    <Grid container spacing={3}>
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Box className="proj-card">
+                                <Typography variant="subtitle2" style={{ textAlign: "center" }}>Cybersecurity</Typography>
+                            </Box>
                         </Grid>
 
-                    </Paper>
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Box className="proj-card">
+                                <Typography variant="subtitle2" style={{ textAlign: "center" }}>Quality Engineering</Typography>
+                            </Box>
+                        </Grid>
 
-                </div>
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Box className="proj-card">
+                                <Typography variant="subtitle2" style={{ textAlign: "center" }}>Data Analytics</Typography>
+                            </Box>
+                        </Grid>
 
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Box className="proj-card">
+                                <Typography variant="subtitle2" style={{ textAlign: "center" }}>Database Management</Typography>
+                            </Box>
+                        </Grid>
 
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Box className="proj-card">
+                                <Typography variant="subtitle2" style={{ textAlign: "center" }}>Application Support</Typography>
+                            </Box>
+                        </Grid>
 
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Box className="proj-card">
+                                <Typography variant="subtitle2" style={{ textAlign: "center" }}>Network Engineering</Typography>
+                            </Box>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Box className="proj-card">
+                                <Typography variant="subtitle2" style={{ textAlign: "center" }}>Mainframe Computing</Typography>
+                            </Box>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Box className="proj-card">
+                                <Typography variant="subtitle2" style={{ textAlign: "center" }}>Web Development</Typography>
+                            </Box>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Box className="proj-card">
+                                <Typography variant="subtitle2" style={{ textAlign: "center" }}>IT Support</Typography>
+                            </Box>
+                        </Grid>
+                    </Grid>
+                </Container>
+
+                <Container>
+                    <Typography variant="h4" style={{ textAlign: "center" }}>
+                        Geograhic Focus
+            </Typography>
+                </Container>
             </Container>
+
+
+
 
 
 
