@@ -1,0 +1,39 @@
+.main {
+    /* height: 100vh;
+      display: block;
+      float: none; */
+  }
+  
+  .work-btns {
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  
+  .work-btn1 {
+    margin: 20px !important;
+  }
+  
+  .work-btn2 {
+    margin: 20px !important;
+  }
+  
+  .proj-area-header {
+    padding-bottom: 2rem;
+  }
+  
+  .proj-card {
+    min-width: 100%;
+    height: 300px;
+    background-color: aquamarine;
+  }
+  
+  .proj-card-container {
+    padding: 0 30px !important;
+    margin-bottom: 5rem;
+  }
+  
+  .proj-area {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  
