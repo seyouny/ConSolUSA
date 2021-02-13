@@ -62,3 +62,18 @@ hr {
   background-color: cadetblue;
   
 }
+
+.offices-container {
+  margin-bottom: 10rem;
+  margin-top: 3rem;
+}
+
+.w-office,
+.e-office {
+  max-width: 400px;
+  text-align: center;
+}
+
+.offices-header {
+  padding-bottom: 4rem;
+}

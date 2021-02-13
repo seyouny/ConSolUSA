@@ -8,6 +8,10 @@ import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Banner from "../../components/banner/";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
 import "./style.css";
 
 export default function WorkPage() {
@@ -303,6 +307,8 @@ export default function WorkPage() {
               the US. We work virtually, at our customers premises, or in a
               hybrid framework. We are flexible to meet our customers' needs,
               with each team employing the same innovative ecosystem model.
+              <br />
+              <br />
               While we are a US company and our employees are drawn from
               "domestic emerging markets" in the United States, we recognize the
               global needs of some of our customers. Our founder and leadership
@@ -314,9 +320,69 @@ export default function WorkPage() {
         </Container>
       </Container>
 
-      <Container className="offices-container">
-        <Grid container spacing={6}>
-          <Grid item xs={12} sm={6}></Grid>
+      <Container className="offices-container" >
+        <Typography
+          variant="h3"
+          className="offices-header"
+          style={{ textAlign: "center", fontWeight: "900" }}
+        >
+          Offices
+        </Typography>
+        <Grid container spacing={6} >
+          <Grid item xs={12} sm={3}></Grid>
+          <Grid item xs={12} sm={3}>
+            <Card className="w-office">
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt=""
+                  height="140"
+                  image=""
+                  title=""
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    West Coast
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    XXXX Suite XXXXX, XXXX, XX XXXXX, <br />
+                    USA +1(555) 555-5555
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Card className="e-office">
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt=""
+                  height="140"
+                  image=""
+                  title=""
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    East Coast
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    8 The Green, Suite #8212, Dover, DE 19901, 
+                    USA +1(302) 401-6537
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={3}></Grid>
         </Grid>
       </Container>
 
