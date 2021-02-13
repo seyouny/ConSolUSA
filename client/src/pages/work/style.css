@@ -1,7 +1,10 @@
-.main {
-  /* height: 100vh;
-    display: block;
-    float: none; */
+/* .main {
+  display: block;
+  float: none;
+} */
+.proj-btns {
+  margin-top: 5rem;
+  padding-bottom: 3rem;
 }
 
 .work-btns {
@@ -17,23 +20,60 @@
   margin: 20px !important;
 }
 
+hr {
+  width: 50%;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
 .proj-area-header {
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .proj-card {
   min-width: 100%;
-  height: 300px;
-  background-color: aquamarine;
+  height: 225px;
+  /* background-color: aquamarine; */
+}
+
+.proj-type {
+  padding: 15px;
+  padding-bottom: 10px;
+}
+
+.proj-type-head {
+  padding-top: 15px;
 }
 
 .proj-card-container {
   padding: 0 30px !important;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
+  margin-top: 3rem;
 }
 
-.proj-area {
+/* .proj-area {
   margin-top: 2rem;
   margin-bottom: 5rem;
-}
+} */
+
+.geo-focus-img {
+  height: 500px;
+  background-color: cadetblue;
   
+}
+
+.offices-container {
+  margin-bottom: 10rem;
+  margin-top: 3rem;
+}
+
+.w-office,
+.e-office {
+  max-width: 400px;
+  text-align: center;
+}
+
+.offices-header {
+  padding-bottom: 4rem;
+}

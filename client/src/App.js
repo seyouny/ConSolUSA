@@ -26,12 +26,12 @@ function App() {
               <Route exact path="/partners" component={PartnersPage}/>
               <Route exact path="/news" component={NewsPage}/>
               <Route exact path="/contact" component={ContactPage}/>
-            </Switch>
+          </Switch>
       
         
-          </Router>
+      </Router>
 
-        <Footer></Footer>
+      <Footer></Footer>
 
     </div>
   );
