@@ -176,6 +176,7 @@ export default function PartnersPage() {
 
                 <Grid container spacing={5}>
                     <Grid className={classes.root} item xs={12} sm={6} md={4}>
+                        
                         <Box className="proj-card">
                             <Typography
                                 variant="h6"
