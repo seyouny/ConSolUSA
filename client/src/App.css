@@ -16,11 +16,6 @@ h1, h2 {
   justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -32,13 +27,81 @@ h1, h2 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hideOnMedUp {
+  display: none;
+  visibility: hidden;
+}
+
+.menu {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+  padding-top: .8rem;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  width: 100%;
+  transition: all 0.5s ease;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: inline;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1% 0 1%;
+  margin: 0 4% 0 4%;
+}
+
+.menu a {
+  color: white;
+  padding: 3px 8px 6px 8px;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  transition: ease-in-out;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, .5);
+  border-radius: 50% / 10%;
+  background-image: linear-gradient(to right, #dd690c 0%, #e37c0e 51%, #efa313 100%);
+  background-position: right center;
+}
+
+.selectedLink {
+  border-radius: 50% / 10%;
+  background-image: linear-gradient(to right, #dd690c 0%, #e37c0e 51%, #efa313 100%);
+  background-position: left center;
+  color: white;
+}
+
+.show {
+  visibility: visible
+}
+
+#smallScreenNavBar {
+  display: none;
+  visibility: hidden
 }
 
 .submenu-button {
   padding: 8px;
   border-radius: 40px !important;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.menu .icon {
+  display: none;
 }
 
 @keyframes App-logo-spin {
@@ -54,4 +117,58 @@ h1, h2 {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media screen and (max-width: 768px) {
+
+  .hideOnMedUp {
+    display: inline-block;
+    visibility: visible;
+  }
+
+  #smallScreenNavBar {
+    height: 6vh;
+    padding-left: 5%;
+    padding-top: 3%;
+    display: block;
+    visibility: visible;
+    background-image: linear-gradient(to right, #dd690c 0%, #e37c0e 51%, #efa313 100%);
+  }
+
+  .menu {
+    height: fit-content;
+    position: absolute;
+    display: block;
+    margin-top: 10%;
+  }
+
+  .menu li {
+    background-color: rgba(255, 255, 255, .3);
+    margin: 0;
+    float: none;
+    display: block;
+    text-align: center;
+    width: 20%;
+  }
+
+  .show {
+    visibility: visible
+  }
+
+  .hide {
+    visibility: hidden;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
 }

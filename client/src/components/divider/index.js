@@ -1,5 +1,5 @@
 import React from 'react';
-import dividerimg from './border-rt-bottom-orange-min.png';
+import divider from './border-rt-bottom-orange-min.png';
 import './style.css';
 
 export default function Divider () {
@@ -8,7 +8,7 @@ export default function Divider () {
   
       <div>
   
-        <img src={dividerimg} alt="divider image" className="divider" width="100%"></img> 
+        <img src={divider} alt="divider orange and blue" className="divider" width="100%"></img> 
   
       </div>
   

@@ -64,7 +64,7 @@ export default function PeoplePage() {
 
       </Container>
 
-      <Container className="main">
+      <Container className="founder">
 
         <Grid container spacing={1}>
 
@@ -97,18 +97,28 @@ export default function PeoplePage() {
             <img src={Founder} alt="Robert Tibbs" className="headshot" width="100%" />
           </Grid>
 
-            {/* ================= SECTION DIVIDER ================= */}
-          <Grid item xs={12}>
+        </Grid>
 
-            <Divider></Divider>
-          
-          </Grid>
+      </Container>
 
 
+      {/* ================= SECTION DIVIDER ================= */}
 
-          {/* ================= STAFF PHOTOS ================= */}
-          
-          <Grid item xs={3} className="orangeBkg">
+      <Divider></Divider>
+
+      {/* ================= STAFF PHOTOS ================= */}
+      <Container id="staff">
+
+        <Grid container spacing={1}>
+
+        <Grid item xs={12}>
+        <Typography 
+          variant="h3"
+          style={{ textAlign: "center" }}
+        >Staff</Typography>
+        </Grid>
+
+          <Grid item xs={3}>
 
             <Card className="staffCard" onClick={handleOpen}>
               <CardActionArea>
@@ -212,7 +222,7 @@ export default function PeoplePage() {
                 </Typography>
 
                   <Typography gutterBottom variant="body1" component="h3" className="title">
-                    President & Chief Commercial Officer
+                    President, Chief Commercial Officer
                 </Typography>
 
                 </CardContent>
@@ -309,7 +319,7 @@ export default function PeoplePage() {
                   component="img"
                   alt="Patrick Cohen"
                   height="140"
-                  image="https://isteam.wsimg.com/ip/c75c11ac-84a2-47f7-94f0-8f5c6616f844/IMG_5167-0001.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:582,h:291,cg:true"
+                  image="https://img1.wsimg.com/isteam/ip/c75c11ac-84a2-47f7-94f0-8f5c6616f844/Patrick%20Cohen.jpeg/:/cr=t:5.36%25,l:0%25,w:100%25,h:89.29%25/rs=w:582,h:291,cg:true"
                   title="Patrick Cohen"
                 />
                 <CardContent>
@@ -408,7 +418,68 @@ export default function PeoplePage() {
           </Grid>
 
         </Grid>
+      </Container>
 
+{/* ================= SECTION DIVIDER ================= */}
+
+      {/* <Divider></Divider> */}
+
+{/* =================== BOARD =================== */}
+
+      <Container id="board">
+        <Grid container spacing={1}>
+
+        <Grid item xs={12}>
+        <Typography 
+          variant="h3"
+          style={{ textAlign: "center" }}
+        >Board</Typography>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        </Grid>
+      </Container>
+
+{/* ================= SECTION DIVIDER ================= */}
+
+    <Divider></Divider>
+
+{/* =================== ADVISORS =================== */}
+
+      <Container id="advisors">
+        <Grid container spacing={1}>
+
+        <Grid item xs={12}>
+        <Typography 
+          variant="h3"
+          style={{ textAlign: "center" }}
+        >Advisors</Typography>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        </Grid>
       </Container>
 
     </div>
