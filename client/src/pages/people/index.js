@@ -98,13 +98,12 @@ export default function PeoplePage() {
           </Grid>
 
             {/* ================= SECTION DIVIDER ================= */}
+
           <Grid item xs={12}>
 
             <Divider></Divider>
           
           </Grid>
-
-
 
           {/* ================= STAFF PHOTOS ================= */}
           
