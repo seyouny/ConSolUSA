@@ -27,8 +27,15 @@ hr {
   border: none;
 }
 
-.proj-area-header {
+/* .proj-area-header {
+  color: #164E85;
+} */
+
+.proj-area-header,
+.offices-header,
+.geo-focus-header {
   padding-bottom: 4rem;
+  color: #164e85;
 }
 
 .proj-card {
@@ -43,7 +50,9 @@ hr {
 }
 
 .proj-type-head {
-  padding-top: 15px;
+  padding: 15px 0px;
+  color: rgb(255, 255, 255);
+  background-color: #164e85;
 }
 
 .proj-card-container {
@@ -52,28 +61,51 @@ hr {
   margin-top: 3rem;
 }
 
-/* .proj-area {
+.proj-area {
   margin-top: 2rem;
   margin-bottom: 5rem;
-} */
+}
 
 .geo-focus-img {
   height: 500px;
-  background-color: cadetblue;
-  
+  background-image: url("./geo-focus-pic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .offices-container {
-  margin-bottom: 10rem;
+  /* margin-bottom: 15rem; */
   margin-top: 3rem;
+
+  /* margin: 0 3rem; */
+}
+
+.office-inner {
+  justify-content: center;
+}
+
+.offImgBox1 {
+  background-image: url("./ggbridge.jpg");
+}
+
+.offImgBox3 {
+  background-image: url("./delaware-city.jpg");
 }
 
 .w-office,
-.e-office {
-  max-width: 400px;
+.e-office,
+.mw-office {
+  /* max-width: 400px; */
   text-align: center;
 }
 
-.offices-header {
-  padding-bottom: 4rem;
+.workPageBreak {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/* .pageBreak1 {
+  background-image: url("./page_graphic_blue_white.png");
+} */
