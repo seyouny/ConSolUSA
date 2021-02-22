@@ -12,6 +12,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+import PageBreak from "./page_graphic_blue_white.png";
 import "./style.css";
 
 export default function WorkPage() {
@@ -66,7 +67,7 @@ export default function WorkPage() {
                 >
                   Cybersecurity
                 </Typography>
-                <hr />
+                {/* <hr /> */}
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -93,7 +94,7 @@ export default function WorkPage() {
                 >
                   Quality Engineering
                 </Typography>
-                <hr />
+                {/* <hr /> */}
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -118,7 +119,7 @@ export default function WorkPage() {
                 >
                   Data Analytics
                 </Typography>
-                <hr />
+                {/* <hr /> */}
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -143,7 +144,7 @@ export default function WorkPage() {
                 >
                   Database Management
                 </Typography>
-                <hr />
+                {/* <hr /> */}
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -169,7 +170,7 @@ export default function WorkPage() {
                 >
                   Application Support
                 </Typography>
-                <hr />
+                {/* <hr /> */}
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -194,7 +195,7 @@ export default function WorkPage() {
                 >
                   Network Engineering
                 </Typography>
-                <hr />
+                {/* <hr /> */}
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -220,7 +221,7 @@ export default function WorkPage() {
                 >
                   Mainframe Computing
                 </Typography>
-                <hr />
+                {/* <hr /> */}
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -244,7 +245,7 @@ export default function WorkPage() {
                 >
                   Web Development
                 </Typography>
-                <hr />
+                {/* <hr /> */}
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -268,7 +269,7 @@ export default function WorkPage() {
                 >
                   IT Support
                 </Typography>
-                <hr />
+                {/* <hr /> */}
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -285,15 +286,22 @@ export default function WorkPage() {
       </Container>
 
       <Container className="geo-focus-container" id="g-focus" mt={10}>
+        <Typography
+          variant="h3"
+          className="geo-focus-header"
+          style={{ textAlign: "center", fontWeight: "900" }}
+        >
+          Geographic Focus
+        </Typography>
         <Box className="geo-focus-img">
-          <Box pt={5}>
+          {/* <Box pt={5}>
             <Typography
               variant="h3"
               style={{ textAlign: "center", fontWeight: "900", color: "white" }}
             >
               Geographic Focus
             </Typography>
-          </Box>
+          </Box> */}
         </Box>
 
         <Container>
@@ -301,7 +309,7 @@ export default function WorkPage() {
             <Typography
               variant="subtitle1"
               gutterBottom
-              style={{ textAlign: "center" }}
+              // style={{ textAlign: "center" }}
             >
               Our Associates are able to work on projects for clients throughout
               the US. We work virtually, at our customers premises, or in a
@@ -320,24 +328,26 @@ export default function WorkPage() {
         </Container>
       </Container>
 
-      <Container className="offices-container" >
+      <Container className="offices-container" maxWidth="false">
         <Typography
           variant="h3"
           className="offices-header"
+          maxWidth="false"
           style={{ textAlign: "center", fontWeight: "900" }}
         >
           Offices
         </Typography>
-        <Grid container spacing={6} >
-          <Grid item xs={12} sm={3}></Grid>
+        <Grid container maxWidth="false" className="office-inner" spacing={6}>
+          {/* <Grid item xs={12} sm={1.5}></Grid> */}
           <Grid item xs={12} sm={3}>
             <Card className="w-office">
               <CardActionArea>
                 <CardMedia
+                  className="offImgBox1"
                   component="img"
                   alt=""
-                  height="140"
-                  image=""
+                  height="200"
+                  // image="./ggbridge.jpg"
                   title=""
                 />
                 <CardContent>
@@ -357,12 +367,40 @@ export default function WorkPage() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={3}>
+            <Card className="mw-office">
+              <CardActionArea>
+                <CardMedia
+                  className="offImgBox2"
+                  component="img"
+                  alt=""
+                  height="200"
+                  image=""
+                  title=""
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    Mid-West
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    XXXX Suite XXXXX, XXXX, XX XXXXX, <br />
+                    USA +1(555) 555-5555
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={3}>
             <Card className="e-office">
               <CardActionArea>
                 <CardMedia
+                  className="offImgBox3"
                   component="img"
                   alt=""
-                  height="140"
+                  height="200"
                   image=""
                   title=""
                 />
@@ -375,15 +413,23 @@ export default function WorkPage() {
                     color="textSecondary"
                     component="p"
                   >
-                    8 The Green, Suite #8212, Dover, DE 19901, 
-                    USA +1(302) 401-6537
+                    8 The Green, Suite #8212, Dover, DE 19901, USA +1(302)
+                    401-6537
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={3}></Grid>
+          {/* <Grid item xs={12} sm={1.5}></Grid> */}
         </Grid>
+
+        <Container>
+          <Grid>
+            <Grid item xs={12} className="workPageBreak">
+              <img src={PageBreak} alt="page graphic"></img>
+            </Grid>
+          </Grid>
+        </Container>
       </Container>
 
       {/* BUILD ELEMENTS BELOW HERE. FEEL FREE TO EDIT THE ITEMS, JUST A TOOLKIT. */}
