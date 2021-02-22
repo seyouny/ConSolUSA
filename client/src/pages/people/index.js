@@ -420,6 +420,67 @@ export default function PeoplePage() {
         </Grid>
       </Container>
 
+{/* ================= SECTION DIVIDER ================= */}
+
+      {/* <Divider></Divider> */}
+
+{/* =================== BOARD =================== */}
+
+      <Container id="board">
+        <Grid container spacing={1}>
+
+        <Grid item xs={12}>
+        <Typography 
+          variant="h3"
+          style={{ textAlign: "center" }}
+        >Board</Typography>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        </Grid>
+      </Container>
+
+{/* ================= SECTION DIVIDER ================= */}
+
+    <Divider></Divider>
+
+{/* =================== ADVISORS =================== */}
+
+      <Container id="advisors">
+        <Grid container spacing={1}>
+
+        <Grid item xs={12}>
+        <Typography 
+          variant="h3"
+          style={{ textAlign: "center" }}
+        >Advisors</Typography>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper>person</Paper>
+        </Grid>
+
+        </Grid>
+      </Container>
 
     </div>
 
