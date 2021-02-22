@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
@@ -12,18 +13,23 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Modal from '@material-ui/core/Modal';
+import Divider from '../../components/divider';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
 import './style.css';
 
 
 export default function PeoplePage() {
 
-  const [expanded, setExpanded] = React.useState('panel1');
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false);
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
   return (
@@ -62,7 +68,7 @@ export default function PeoplePage() {
 
         <Grid container spacing={1}>
 
-      {/* ================= FOUNDERS STORY ================= */}
+          {/* ================= FOUNDERS STORY ================= */}
 
           <Grid item xs={8}>
 
@@ -91,19 +97,22 @@ export default function PeoplePage() {
             <img src={Founder} alt="Robert Tibbs" className="headshot" width="100%" />
           </Grid>
 
+            {/* ================= SECTION DIVIDER ================= */}
           <Grid item xs={12}>
-          {/* ================= SECTION DIVIDER ================= */}
+
+            <Divider></Divider>
+          
           </Grid>
 
 
 
           {/* ================= STAFF PHOTOS ================= */}
+          
+          <Grid item xs={3} className="orangeBkg">
 
-          <Grid item xs={3}>
-
-            <Card className="staffCard">
+            <Card className="staffCard" onClick={handleOpen}>
               <CardActionArea>
-              <CardMedia
+                <CardMedia
                   component="img"
                   alt="Robert Tibbs"
                   height="140"
@@ -114,31 +123,20 @@ export default function PeoplePage() {
                     Robert Tibbs
                   </Typography>
 
-                  <Typography gutterBottom variant="p" component="h3" className="title">
+                  <Typography gutterBottom variant="body1" component="h3" className="title">
                     Chairman and CEO
                   </Typography>
 
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                  <Button><a size="small" color="primary" href='mailto:rtibbs@consol-usa.com'>
-                    Email
+                <Button><a size="small" color="primary" href='mailto:rtibbs@consol-usa.com'>
+                  Email
                   </a></Button>
-                  <Button><a size="small" color="primary" href='https://www.linkedin.com/in/roberttibbs/'>
-                    LinkedIn
+                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/roberttibbs/'>
+                  LinkedIn
                   </a></Button>
               </CardActions>
-
-                <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                  <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography>about</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography variant="body2">
-                      Entrepreneur with over 30 years of international technology ventures on four continents. Former founder and CEO of Forbes Digital Commerce; Accelon; Africa Venture Partners; and Actel Ltd.  Former board member of NY Technology Alliance
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
 
             </Card>
 
@@ -146,9 +144,9 @@ export default function PeoplePage() {
 
           <Grid item xs={3}>
 
-            <Card className="staffCard">
+            <Card className="staffCard" onClick={handleOpen}>
 
-                <CardActionArea>
+              <CardActionArea>
                 <CardMedia
                   component="img"
                   alt="Annatina Tibbs"
@@ -156,37 +154,43 @@ export default function PeoplePage() {
                   image="https://isteam.wsimg.com/ip/c75c11ac-84a2-47f7-94f0-8f5c6616f844/IMG_5167-0001.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:582,h:291,cg:true"
                   title="Annatina Tibbs"
                 />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2" className="name">
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2" className="name">
                     Annatina Tibbs
                   </Typography>
 
-                  <Typography gutterBottom variant="p" component="h3" className="title">
+                  <Typography gutterBottom variant="body1" component="h3" className="title">
                     Chief of Staff
                   </Typography>
 
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button><a size="small" color="primary" href='mailto:atibbs@consol-usa.com'>
-                      Email
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button><a size="small" color="primary" href='mailto:atibbs@consol-usa.com'>
+                  Email
                     </a></Button>
-                    <Button><a size="small" color="primary" href='https://www.linkedin.com/in/annatinatibbs/'>
-                      LinkedIn
+                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/annatinatibbs/'>
+                  LinkedIn
                     </a></Button>
-                </CardActions>
+              </CardActions>
 
-                  <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                      <Typography>about</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography variant="body2">
-                      Serial entrepreneur, Director of Corporate Affairs at Forbes Digital Commerce and Lotaris SA; substantial international experience in Europe, Africa, Asia and North America; specialist in human capital, building organizational ethos; holistic wellness coach and practitioner.                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
+              <Modal
+                className="staffModal"
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+              >
 
-              </Card>
+                <Paper>
+                  <h2 id="simple-modal-title">Text in a modal</h2>
+                  <p id="simple-modal-description">
+                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                </Paper>
+
+              </Modal>
+
+            </Card>
 
           </Grid>
 
@@ -195,7 +199,7 @@ export default function PeoplePage() {
             <Card className="staffCard">
 
               <CardActionArea>
-              <CardMedia
+                <CardMedia
                   component="img"
                   alt="Malcolm Goodwin"
                   height="140"
@@ -203,34 +207,24 @@ export default function PeoplePage() {
                   title="Malcolm Goodwin"
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" component="h2" className="name">
-                  Malcolm Goodwin
+                  <Typography gutterBottom variant="h5" component="h2" className="name">
+                    Malcolm Goodwin
                 </Typography>
 
-                <Typography gutterBottom variant="p" component="h3" className="title">
-                  President & Chief Commercial Officer
+                  <Typography gutterBottom variant="body1" component="h3" className="title">
+                    President & Chief Commercial Officer
                 </Typography>
 
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                  <Button><a size="small" color="primary" href='mailto:mgoodwin@consol-usa.com'>
-                    Email
+                <Button><a size="small" color="primary" href='mailto:mgoodwin@consol-usa.com'>
+                  Email
                   </a></Button>
-                  <Button><a size="small" color="primary" href='https://www.linkedin.com/in/malcolmgoodwin/'>
-                    LinkedIn
+                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/malcolmgoodwin/'>
+                  LinkedIn
                   </a></Button>
               </CardActions>
-
-                <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                  <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography>about</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography variant="body2">
-                    Former client executive with World Wide Technology, the largest Black-owned technology company in the US (founded by Dave Steward, one of the 5 Black US billionaires). Board member of Big Brothers Big Sisters Bay Area, and 100 Black Men of the Bay Area.             </Typography>
-                  </AccordionDetails>
-                </Accordion>
 
             </Card>
 
@@ -238,54 +232,44 @@ export default function PeoplePage() {
 
           <Grid item xs={3}>
 
-          <Card className="staffCard">
+            <Card className="staffCard">
 
-            <CardActionArea>
-            <CardMedia
+              <CardActionArea>
+                <CardMedia
                   component="img"
                   alt="Contemplative Reptile"
                   height="140"
                   image="https://img1.wsimg.com/isteam/ip/c75c11ac-84a2-47f7-94f0-8f5c6616f844/Screen%20Shot%202020-03-15%20at%204.12.27%20PM.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:582,h:291,cg:true"
                   title="Robert Tibbs"
                 />              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2" className="name">
-                  Mark Egan
+                  <Typography gutterBottom variant="h5" component="h2" className="name">
+                    Mark Egan
                 </Typography>
 
-                <Typography gutterBottom variant="p" component="p" className="title">
-                  Chief Technology Officer
+                  <Typography gutterBottom variant="body1" component="h3" className="title">
+                    Chief Technology Officer
                 </Typography>
 
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
                 <Button><a size="small" color="primary" href='mailto:megans@consol-usa.com'>
                   Email
                 </a></Button>
                 <Button><a size="small" color="primary" href='https://www.linkedin.com/in/markeegan/'>
                   LinkedIn
                 </a></Button>
-            </CardActions>
-
-              <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                  <Typography>about</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography variant="body2">
-                  25 years of experience leading global IT organizations; specialization in IT transformation, information security, and M&A; Partner at StrataFusion Group; former global CIO at VMware; former global CIO at Symantec; author; lecturer at UC Berkeley Haas School of Business.                  </Typography>
-                </AccordionDetails>
-              </Accordion>
+              </CardActions>
 
             </Card>
 
           </Grid>
 
-            <Grid item xs={3}>
+          <Grid item xs={3}>
 
             <Card className="staffCard">
               <CardActionArea>
-              <CardMedia
+                <CardMedia
                   component="img"
                   alt="Racheal Fosu"
                   height="140"
@@ -293,44 +277,34 @@ export default function PeoplePage() {
                   title="Racheal Fosu"
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" component="h2" className="name">
-                  Racheal Fosu
+                  <Typography gutterBottom variant="h5" component="h2" className="name">
+                    Racheal Fosu
                 </Typography>
 
-                <Typography gutterBottom variant="p" component="h3" className="title">
-                  Chief Technology Advisor
+                  <Typography gutterBottom variant="body1" component="h3" className="title">
+                    Chief Technology Advisor
                 </Typography>
 
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                  <Button><a size="small" color="primary" href='mailto:rfosu@consol-usa.com'>
-                    Email
+                <Button><a size="small" color="primary" href='mailto:rfosu@consol-usa.com'>
+                  Email
                   </a></Button>
-                  <Button><a size="small" color="primary" href='https://www.linkedin.com/in/rachealfosu/'>
-                    LinkedIn
+                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/rachealfosu/'>
+                  LinkedIn
                   </a></Button>
               </CardActions>
 
-                <Accordion square expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
-                  <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography>about</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography variant="body2">
-                    Technology Executive with 20 years experience in Strategy, IT transformation, Big Data and Analytics; former head of Global Technology Strategy at Broadridge; former Global Technology Head at ICE/NY Stock Exchange responsible for teams in Americas, Europe and Asia.                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-
             </Card>
 
-            </Grid>
+          </Grid>
 
-            <Grid item xs={3}>
+          <Grid item xs={3}>
 
             <Card className="staffCard">
 
-                <CardActionArea>
+              <CardActionArea>
                 <CardMedia
                   component="img"
                   alt="Patrick Cohen"
@@ -338,47 +312,36 @@ export default function PeoplePage() {
                   image="https://isteam.wsimg.com/ip/c75c11ac-84a2-47f7-94f0-8f5c6616f844/IMG_5167-0001.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:582,h:291,cg:true"
                   title="Patrick Cohen"
                 />
-                  <CardContent>
+                <CardContent>
                   <Typography gutterBottom variant="h5" component="h2" className="name">
                     Patrick Cohen
                   </Typography>
 
-                  <Typography gutterBottom variant="p" component="h3" className="title">
+                  <Typography gutterBottom variant="body1" component="h3" className="title">
                     Chief Operations Advisor
                   </Typography>
 
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button><a size="small" color="primary" href='mailto:pcohen@consol-usa.com'>
-                      Email
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button><a size="small" color="primary" href='mailto:pcohen@consol-usa.com'>
+                  Email
                     </a></Button>
-                    <Button><a size="small" color="primary" href='https://www.linkedin.com/in/patrick-cohen-094a1b14/'>
-                      LinkedIn
+                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/patrick-cohen-094a1b14/'>
+                  LinkedIn
                     </a></Button>
-                </CardActions>
+              </CardActions>
 
-                  <Accordion square expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                      <Typography>about</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography variant="body2">
-                      Former VP, Strategic Partnerships and National Director at NPower, Former Adjunct Professor at NYU, business executive with over 20 years experience in finance, operations and program management.
-                      </Typography>
-                      </AccordionDetails>
-                  </Accordion>
+            </Card>
 
-              </Card>
+          </Grid>
 
-            </Grid>
-
-            <Grid item xs={3}>
+          <Grid item xs={3}>
 
             <Card className="staffCard">
 
               <CardActionArea>
-              <CardMedia
+                <CardMedia
                   component="img"
                   alt="Joseph Spence II"
                   height="140"
@@ -389,86 +352,64 @@ export default function PeoplePage() {
                     Joseph Spence II
                   </Typography>
 
-                  <Typography gutterBottom variant="p" component="h3" className="title">
+                  <Typography gutterBottom variant="body1" component="h3" className="title">
                     Chief Financial & Strategy Officer
                   </Typography>
 
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                  <Button><a size="small" color="primary" href='mailto:jspence@consol-usa.com'>
-                    Email
+                <Button><a size="small" color="primary" href='mailto:jspence@consol-usa.com'>
+                  Email
                   </a></Button>
-                  <Button><a size="small" color="primary" href='https://www.linkedin.com/in/josephspenceii/'>
-                    LinkedIn
+                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/josephspenceii/'>
+                  LinkedIn
                   </a></Button>
               </CardActions>
 
-                <Accordion square expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
-                  <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography>about</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography variant="body2">
-                    Investment banker, investor, and advisor; former Executive Director with Goldman Sachs responsible for sector teams in the Americas, Europe, Middle East and Africa; Managing Partner at Valhalla Ventures, philanthropist and founder of We are Makers and IconIQ.                  
-                    </Typography>
-                    </AccordionDetails>
-                </Accordion>
-
             </Card>
 
-            </Grid>
+          </Grid>
 
-            <Grid item xs={3}>
+          <Grid item xs={3}>
 
             <Card className="staffCard">
 
-            <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Nagelah Cohen"
-              height="140"
-              image="https://img1.wsimg.com/isteam/ip/c75c11ac-84a2-47f7-94f0-8f5c6616f844/image-0002.jpg/:/cr=t:2.83%25,l:0%25,w:100%25,h:94.34%25/rs=w:582,h:291,cg:true"
-              title="Nagelah Cohen"
-            />              
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Nagelah Cohen"
+                  height="140"
+                  image="https://img1.wsimg.com/isteam/ip/c75c11ac-84a2-47f7-94f0-8f5c6616f844/image-0002.jpg/:/cr=t:2.83%25,l:0%25,w:100%25,h:94.34%25/rs=w:582,h:291,cg:true"
+                  title="Nagelah Cohen"
+                />
                 <CardContent>
-                <Typography gutterBottom variant="h5" component="h2" className="name">
-                  Nagelah Cohen 
+                  <Typography gutterBottom variant="h5" component="h2" className="name">
+                    Nagelah Cohen
                 </Typography>
 
-                <Typography gutterBottom variant="p" component="p" className="title">
-                  Senior Manager, Finance
+                  <Typography gutterBottom variant="body1" component="p" className="title">
+                    Senior Manager, Finance
                 </Typography>
 
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
                 <Button><a size="small" color="primary" href='mailto:ncohen@consol-usa.com'>
                   Email
                 </a></Button>
                 <Button><a size="small" color="primary" href='https://www.linkedin.com/in/nagelah-cohen-6020038/'>
                   LinkedIn
                 </a></Button>
-            </CardActions>
-
-              <Accordion square expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
-                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                  <Typography>about</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography variant="body2">
-                    Seasoned finance/accounting professional and former Ernst & Young auditor with over twenty years of experience across internal controls, assurance, tax, Sarbanes-Oxley and financial reporting in various industries including pharmaceutical, real estate, non-profit, healthcare, government and transportation.  Served as treasurer for Delta Sigma Theta Sorority, Incorporated. 
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
+              </CardActions>
 
             </Card>
 
-            </Grid>
+          </Grid>
 
         </Grid>
 
-    </Container>
+      </Container>
 
     </div>
 

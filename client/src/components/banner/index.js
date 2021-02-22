@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logowhite.png';
 import './style.css';
 
