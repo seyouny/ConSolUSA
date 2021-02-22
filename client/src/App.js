@@ -11,9 +11,23 @@ import Footer from './components/footer/index';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavLink, Link } from 'react-router-dom'
 import './App.css';
+import $ from 'jquery';
 
 
 function App() {
+
+  function handleMenuClick() {
+    $('#menuIcon').on('click', function () {
+      var menuItems = $('ul');
+      if (menuItems.className === 'hide') {
+        menuItems.className += 'show';
+      } else {
+        menuItems.className = 'hide'
+      }
+      console.log("Menu icon clicked")
+    })
+  }  
+
   return (
     <div className="App">
       {/* <NavHeader></NavHeader> */}
@@ -21,6 +35,8 @@ function App() {
       <Router>
 
       <nav>
+      <div id="smallScreenNavBar" className="hideOnMedUp">
+        <MenuIcon id="menuIcon" className="hideOnMedUp" onClick={handleMenuClick}></MenuIcon></div>
           <ul className="menu">
             <li>
               <NavLink to="/">Home</NavLink>
@@ -40,7 +56,6 @@ function App() {
             <li>
               <NavLink to="/contact" activeClassName="selectedLink">Contact</NavLink>
             </li>
-            <MenuIcon className="icon"></MenuIcon>
           </ul>
         </nav>
 

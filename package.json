@@ -30,6 +30,7 @@
     "@material-ui/icons": "^4.11.2",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
+    "jquery": "^3.5.1",
     "react-foundation": "^0.9.6",
     "react-router-dom": "^5.2.0"
   }

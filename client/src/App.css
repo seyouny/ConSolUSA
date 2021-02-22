@@ -16,11 +16,6 @@ h1, h2 {
   justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -30,10 +25,6 @@ h1, h2 {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 .hideOnMedUp {
@@ -94,6 +85,15 @@ h1, h2 {
   color: white;
 }
 
+.show {
+  visibility: visible
+}
+
+#smallScreenNavBar {
+  display: none;
+  visibility: hidden
+}
+
 .submenu-button {
   padding: 8px;
   border-radius: 40px !important;
@@ -121,37 +121,47 @@ h1, h2 {
 
 /* Extra small devices (phones, 600px and down) */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+
   .hideOnMedUp {
     display: inline-block;
     visibility: visible;
   }
 
-  .menu a:not(:first-child) {
-    display: none;
-  }
-
-  .menu a.icon {
-    float: right;
+  #smallScreenNavBar {
+    height: 6vh;
+    padding-left: 5%;
+    padding-top: 3%;
     display: block;
+    visibility: visible;
+    background-image: linear-gradient(to right, #dd690c 0%, #e37c0e 51%, #efa313 100%);
   }
 
-  .menu.responsive {
-    position: relative;
-  }
-
-  .menu.responsive a.icon {
+  .menu {
+    height: fit-content;
     position: absolute;
-    right: 0;
-    top: 0;
+    display: block;
+    margin-top: 10%;
   }
-  .menu.responsive a {
+
+  .menu li {
+    background-color: rgba(255, 255, 255, .3);
+    margin: 0;
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
+    width: 20%;
   }
-}
 
+  .show {
+    visibility: visible
+  }
+
+  .hide {
+    visibility: hidden;
+  }
+
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
