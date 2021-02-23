@@ -14,7 +14,10 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Modal from '@material-ui/core/Modal';
-import Divider from '../../components/divider';
+import PageGraphic from '../../components/divider';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import Divider from '@material-ui/core/Divider';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import './style.css';
@@ -104,7 +107,7 @@ export default function PeoplePage() {
 
       {/* ================= SECTION DIVIDER ================= */}
 
-      <Divider></Divider>
+      <PageGraphic></PageGraphic>
 
       {/* ================= STAFF PHOTOS ================= */}
       <Container id="staff">
@@ -436,24 +439,64 @@ export default function PeoplePage() {
         >Board</Typography>
         </Grid>
 
-        <Grid item xs={4}>
-          <Paper>person</Paper>
+        <Grid item xs={6}>
+          <Paper className="centeredNames">
+            <Typography variant="body1">
+              <List>
+                <ListItem>
+                Chairman<br></br>
+                Robert Tibbs<br></br>
+                Founder & CEO<br></br>
+                ConSol USA</ListItem>
+                <Divider variant="inset" component="li" />
+                <ListItem>
+                Jim Agnew<br></br>
+                VP Corporate Development<br></br>
+                Village MD</ListItem>
+                <Divider variant="inset" component="li" />
+                <ListItem>
+                Dr. Taiwo Kayode<br></br>
+                Chief Consulting Engineer<br></br>
+                Exxon Mobile </ListItem>
+                <Divider variant="inset" component="li" />
+              </List>
+            </Typography>
+          </Paper>
         </Grid>
 
-        <Grid item xs={4}>
-          <Paper>person</Paper>
+        <Grid item xs={6}>
+          <Paper className="centeredNames">
+            <Typography variant="body1">
+            Vice Chairman<br></br>
+            Demola Eleso<br></br>
+            Chairman<br></br>
+            Contact Solutions Ltd
+            <br></br>
+            <br></br>
+            Tom Knight<br></br>
+            Chief Operating Officer<br></br> 
+            Genesys Work
+            <br></br>
+            <br></br>
+            Mars Shah<br></br>
+            Chief Operating Officer<br></br>
+            ConSol USA
+            <br></br>
+            <br></br>
+            Dr. Marc Spencer <br></br>
+            CEO <br></br>
+            Summer Search
+            </Typography>
+          </Paper>
         </Grid>
 
-        <Grid item xs={4}>
-          <Paper>person</Paper>
-        </Grid>
 
         </Grid>
       </Container>
 
 {/* ================= SECTION DIVIDER ================= */}
 
-    <Divider></Divider>
+  <PageGraphic></PageGraphic>
 
 {/* =================== ADVISORS =================== */}
 

@@ -11,6 +11,12 @@ h1 {
     max-width: 240;
 }
 
+.centeredNames {
+    text-align: center;
+    margin: auto;
+    width: 40%;
+}
+
 
 .headshot {
     border-radius: 50%;
