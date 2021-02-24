@@ -7,8 +7,9 @@ export default function Footer() {
     <div className="footer">
         <div className='row'>
             <div className='columnLeft'>
-                <p><strong>About Us</strong></p>
-                <p>This is info about us. This is info about us. This is info about us. This is info about us. This is info about us.</p>
+                <h4>About Us</h4>
+                <p>ConSol USA is a for-profit company with a mission of positive financial and human impact.  Some call us a social enterprise, but we aim to lead a new category of ecosystem builder.</p>
+                <p>Diverse Tech Talent | Local Outsourcing | Profit with Social Impact</p>
             </div>
             <div className='column'>
                 <p><strong>Contact Us</strong></p>

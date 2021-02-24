@@ -437,7 +437,6 @@ export default function WorkPage() {
             </Card>
           </Grid>
         </Grid>
-
         {/* <Container fixed>
           <Grid>
             <Grid item xs={12} className="workPageBreak">

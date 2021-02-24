@@ -19,16 +19,22 @@
 
 .columnLeft {
     float: left;
-    width: 30%;
+    width: 50%;
     text-align: left;
     padding-right: 5%;
 }
 
 .column {
     float: left;
-    width: 30%;
+    width: 20%;
     text-align: left;
+}
 
+.keyBullets {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    padding-left: 0;
 }
 
 .row:after {
@@ -36,5 +42,4 @@
     display: table;
     clear: both;
     text-align: left;
-
   }
