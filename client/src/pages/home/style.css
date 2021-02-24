@@ -1,11 +1,10 @@
 .border {
-    position: absolute;
-    /* top: 30vh; */
-    left: -20%;
+    position: relative;
+    margin-left: 0;
+    right: 20px;
     z-index: 20;
     background: transparent;
-    width: 60%;
-    float: none;
+    width: 100%;
 }
 
 .hero {

@@ -45,13 +45,13 @@ function App() {
               <NavLink to="/people" activeClassName="selectedLink">People</NavLink>
             </li>
             <li>
+              <NavLink to="/impact" activeClassName="selectedLink">Impact</NavLink>
+            </li>
+            <li>
               <NavLink to="/work" activeClassName="selectedLink">Work</NavLink>
             </li>
             <li>
               <NavLink to="/partners" activeClassName="selectedLink">Partners</NavLink>
-            </li>
-            <li>
-              <NavLink to="/news" activeClassName="selectedLink">News</NavLink>
             </li>
             <li>
               <NavLink to="/contact" activeClassName="selectedLink">Contact</NavLink>
