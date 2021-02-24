@@ -12,10 +12,25 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import PageBreak from "./page_graphic_blue_white.png";
+import PageBreak from "./page_graphic_blue_orange.png";
+import Divider from "../../components/divider";
+import { makeStyles } from "@material-ui/core/styles";
 import "./style.css";
 
+const useStyles = makeStyles({
+  pageDiv: {
+    paddingLeft: "0",
+    paddingRight: "0",
+  },
+  divImage: {
+    width: "100%",
+  },
+});
+
 export default function WorkPage() {
+
+  const classes = useStyles();
+
   return (
     <div>
       <Banner></Banner>
@@ -333,12 +348,11 @@ export default function WorkPage() {
           variant="h3"
           className="offices-header"
           maxWidth="false"
-          style={{ textAlign: "center" }}
+          style={{ textAlign: "center", fontWeight: "900" }}
         >
           Offices
         </Typography>
         <Grid container maxWidth="false" className="office-inner" spacing={6}>
-          {/* <Grid item xs={12} sm={1.5}></Grid> */}
           <Grid item xs={12} sm={3}>
             <Card className="w-office">
               <CardActionArea>
@@ -347,20 +361,19 @@ export default function WorkPage() {
                   component="img"
                   alt=""
                   height="200"
-                  // image="./ggbridge.jpg"
                   title=""
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="h2">
-                    West
+                    West Coast
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    Oakland, CA<br></br>
-                    west@consol-usa.com<br></br>
+                    Oakland, CA <br />
+                    west@consol-usa.com <br />
                     (555) 555-5555
                   </Typography>
                 </CardContent>
@@ -380,15 +393,15 @@ export default function WorkPage() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="h2">
-                    Midwest
+                    Mid-West
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    Chicago, IL<br></br>
-                    midwest@consol-usa.com<br></br>
+                    Chicago, IL <br />
+                    midwest@consol-usa.com <br />
                     (555) 555-5555
                   </Typography>
                 </CardContent>
@@ -408,44 +421,42 @@ export default function WorkPage() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="h2">
-                    East
+                    East Coast
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    Dover, DE<br></br>
-                    east@consol-usa.com<br></br>
+                    Dover, DE <br />
+                    east@consol-usa.com <br />
                     (302) 401-6537
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          {/* <Grid item xs={12} sm={1.5}></Grid> */}
         </Grid>
-
-        <Container>
+        {/* <Container fixed>
           <Grid>
             <Grid item xs={12} className="workPageBreak">
               <img src={PageBreak} alt="page graphic"></img>
             </Grid>
           </Grid>
-        </Container>
+        </Container> */}
       </Container>
 
-      {/* BUILD ELEMENTS BELOW HERE. FEEL FREE TO EDIT THE ITEMS, JUST A TOOLKIT. */}
-
-      {/* <Container className="proj-area">
-        <Container className="proj-card-container"></Container>
-
-        <Container>
-          <Typography variant="h4" style={{ textAlign: "center" }}>
-            Geograhic Focus
-          </Typography>
-        </Container>
-      </Container> */}
+      <Container className={classes.pageDiv} maxWidth="false">
+        <Grid container>
+          <Grid item xs={12} className="workPageBreak">
+            <img
+              className={classes.divImage}
+              src={PageBreak}
+              alt="page graphic"
+            ></img>
+          </Grid>
+        </Grid>
+      </Container>
     </div>
   );
 }

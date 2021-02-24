@@ -40,7 +40,7 @@ hr {
 
 .proj-card {
   min-width: 100%;
-  height: 225px;
+  height: 205px;
   /* background-color: aquamarine; */
 }
 
@@ -75,10 +75,7 @@ hr {
 }
 
 .offices-container {
-  /* margin-bottom: 15rem; */
   margin-top: 3rem;
-
-  /* margin: 0 3rem; */
 }
 
 .office-inner {
@@ -93,9 +90,7 @@ hr {
   background-image: url("https://mggroupchicago.com/wp-content/uploads/2020/08/MG_Group_Chicago_Landmarks-scaled.jpg");
 }
 
-
 .offImgBox3 {
-  /* background-image: url("./delaware-city.jpg"); */
   background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/wilmington/Caesar_Rodney_Courtesy_Mike_Biggs_bd12f230-5eeb-4663-872e-47be7e8d2176.jpg");
 }
 
@@ -106,11 +101,16 @@ hr {
   text-align: center;
 }
 
-.workPageBreak {
+/* .divImage {
+  width: 100%;
+} */
+
+/* .workPageBreak {
+  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 /* .pageBreak1 {
   background-image: url("./page_graphic_blue_white.png");
