@@ -4,7 +4,7 @@ import React from 'react';
 import './style.css';
 import Grid from '@material-ui/core/Grid';
 import logo from './logowhite-min.png';
-import Border from './border-rt-bottom-orange-min.png';
+import Border from './divider_orange_blue.png';
 
 export default function HomePage() {
 
