@@ -89,8 +89,14 @@ hr {
   background-image: url("./ggbridge.jpg");
 }
 
+.offImgBox2 {
+  background-image: url("https://mggroupchicago.com/wp-content/uploads/2020/08/MG_Group_Chicago_Landmarks-scaled.jpg");
+}
+
+
 .offImgBox3 {
-  background-image: url("./delaware-city.jpg");
+  /* background-image: url("./delaware-city.jpg"); */
+  background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/wilmington/Caesar_Rodney_Courtesy_Mike_Biggs_bd12f230-5eeb-4663-872e-47be7e8d2176.jpg");
 }
 
 .w-office,

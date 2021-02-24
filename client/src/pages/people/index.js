@@ -423,11 +423,11 @@ export default function PeoplePage() {
         </Grid>
       </Container>
 
-{/* ================= SECTION DIVIDER ================= */}
+      {/* ================= SECTION DIVIDER ================= */}
 
-      {/* <Divider></Divider> */}
+            {/* <Divider></Divider> */}
 
-{/* =================== BOARD =================== */}
+      {/* =================== BOARD =================== */}
 
       <Container id="board">
         <Grid container spacing={1}>
@@ -439,8 +439,8 @@ export default function PeoplePage() {
         >Board</Typography>
         </Grid>
 
-        <Grid item xs={6}>
-          <Paper className="centeredNames">
+        <Grid item xs={12}>
+          <Paper className="boardList">
             <Typography variant="body1">
               <List>
                 <ListItem>
@@ -448,44 +448,44 @@ export default function PeoplePage() {
                 Robert Tibbs<br></br>
                 Founder & CEO<br></br>
                 ConSol USA</ListItem>
-                <Divider variant="inset" component="li" />
+                <br></br>
+                <br></br>
                 <ListItem>
                 Jim Agnew<br></br>
                 VP Corporate Development<br></br>
                 Village MD</ListItem>
-                <Divider variant="inset" component="li" />
+                <br></br>
+                <br></br>
                 <ListItem>
                 Dr. Taiwo Kayode<br></br>
                 Chief Consulting Engineer<br></br>
-                Exxon Mobile </ListItem>
-                <Divider variant="inset" component="li" />
+                Exxon Mobile</ListItem>
+                <br></br>
+                <br></br>
+                <ListItem>
+                Vice Chairman<br></br>
+                Demola Eleso<br></br>
+                Chairman<br></br>
+                Contact Solutions Ltd</ListItem>
+                <br></br>
+                <br></br>
+                <ListItem>
+                Tom Knight<br></br>
+                Chief Operating Officer<br></br> 
+                Genesys Work</ListItem>
+                <br></br>
+                <br></br>
+                <ListItem>
+                Mars Shah<br></br>
+                Chief Operating Officer<br></br>
+                ConSol USA</ListItem>
+                <br></br>
+                <br></br>
+                <ListItem>
+                Dr. Marc Spencer <br></br>
+                CEO <br></br>
+                Summer Search</ListItem>
               </List>
-            </Typography>
-          </Paper>
-        </Grid>
-
-        <Grid item xs={6}>
-          <Paper className="centeredNames">
-            <Typography variant="body1">
-            Vice Chairman<br></br>
-            Demola Eleso<br></br>
-            Chairman<br></br>
-            Contact Solutions Ltd
-            <br></br>
-            <br></br>
-            Tom Knight<br></br>
-            Chief Operating Officer<br></br> 
-            Genesys Work
-            <br></br>
-            <br></br>
-            Mars Shah<br></br>
-            Chief Operating Officer<br></br>
-            ConSol USA
-            <br></br>
-            <br></br>
-            Dr. Marc Spencer <br></br>
-            CEO <br></br>
-            Summer Search
             </Typography>
           </Paper>
         </Grid>

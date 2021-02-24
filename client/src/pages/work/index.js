@@ -333,7 +333,7 @@ export default function WorkPage() {
           variant="h3"
           className="offices-header"
           maxWidth="false"
-          style={{ textAlign: "center", fontWeight: "900" }}
+          style={{ textAlign: "center" }}
         >
           Offices
         </Typography>
@@ -352,15 +352,16 @@ export default function WorkPage() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="h2">
-                    West Coast
+                    West
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    XXXX Suite XXXXX, XXXX, XX XXXXX, <br />
-                    USA +1(555) 555-5555
+                    Oakland, CA<br></br>
+                    west@consol-usa.com<br></br>
+                    (555) 555-5555
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -379,15 +380,16 @@ export default function WorkPage() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="h2">
-                    Mid-West
+                    Midwest
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    XXXX Suite XXXXX, XXXX, XX XXXXX, <br />
-                    USA +1(555) 555-5555
+                    Chicago, IL<br></br>
+                    midwest@consol-usa.com<br></br>
+                    (555) 555-5555
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -406,15 +408,16 @@ export default function WorkPage() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="h2">
-                    East Coast
+                    East
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    8 The Green, Suite #8212, Dover, DE 19901, USA +1(302)
-                    401-6537
+                    Dover, DE<br></br>
+                    east@consol-usa.com<br></br>
+                    (302) 401-6537
                   </Typography>
                 </CardContent>
               </CardActionArea>
