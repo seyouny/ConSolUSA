@@ -15,9 +15,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Modal from '@material-ui/core/Modal';
 import PageGraphic from '../../components/divider';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
+import Grow from '@material-ui/core/Grow';
+// import BlueArc from './bluearc.jpg';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import Divider from '@material-ui/core/Divider';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import './style.css';
@@ -49,16 +52,20 @@ export default function PeoplePage() {
 
           <Grid container spacing={1}>
 
-            <Grid item xs={4}>
-              <Button variant="outlined" className="submenu-button">Founder</Button>
+            <Grid item xs={12} sm={6} md={3}>
+            <a href="#founder"><Button variant="outlined" className="submenu-button">Founder</Button></a>
             </Grid>
 
-            <Grid item xs={4}>
-              <Button variant="outlined" className="submenu-button">Leaders</Button>
+            <Grid item xs={12} sm={6} md={3}>
+            <a href="#staffContainer"><Button variant="outlined" className="submenu-button">Leaders</Button></a>
             </Grid>
 
-            <Grid item xs={4}>
-              <Button variant="outlined" className="submenu-button">Board</Button>
+            <Grid item xs={12} sm={6} md={3}>
+            <a href="#board"><Button variant="outlined" className="submenu-button">Board</Button></a>
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={3}>
+            <a href="#advisors"><Button variant="outlined" className="submenu-button">Advisors</Button></a>
             </Grid>
 
           </Grid>
@@ -67,7 +74,7 @@ export default function PeoplePage() {
 
       </Container>
 
-      <Container className="founder">
+      <Container id="founder">
 
         <Grid container spacing={1}>
 
@@ -110,15 +117,15 @@ export default function PeoplePage() {
       <PageGraphic></PageGraphic>
 
       {/* ================= STAFF PHOTOS ================= */}
-      <Container id="staff" maxWidth="false">
+      <Container id="staffContainer" maxWidth="false">
 
-        <Grid container spacing={1}>
+        <Grid container spacing={1} id="staffCards">
 
         <Grid item xs={12}>
         <Typography 
           variant="h3"
-          style={{ textAlign: "center" }}
-        >Staff</Typography>
+          style={{ textAlign: "center", color: "white" }}
+        >Leadership Team</Typography>
         </Grid>
 
           <Grid item xs={3}>
@@ -143,12 +150,12 @@ export default function PeoplePage() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button><a size="small" color="primary" href='mailto:rtibbs@consol-usa.com'>
-                  Email
-                  </a></Button>
-                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/roberttibbs/'>
-                  LinkedIn
-                  </a></Button>
+                <a size="small" color="primary" href='mailto:rtibbs@consol-usa.com'>
+                  <EmailIcon></EmailIcon>
+                  </a>
+                <a size="small" color="primary" target="_blank" href='https://www.linkedin.com/in/roberttibbs/'>
+                  <LinkedInIcon></LinkedInIcon>
+                  </a>
               </CardActions>
 
             </Card>
@@ -179,12 +186,12 @@ export default function PeoplePage() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button><a size="small" color="primary" href='mailto:atibbs@consol-usa.com'>
-                  Email
-                    </a></Button>
-                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/annatinatibbs/'>
-                  LinkedIn
-                    </a></Button>
+                <a size="small" target="_blank" color="primary" href='mailto:atibbs@consol-usa.com'>
+                <EmailIcon></EmailIcon>
+                    </a>
+                <a target="_blank" size="small" color="primary" href='https://www.linkedin.com/in/annatinatibbs/'>
+                <LinkedInIcon></LinkedInIcon>
+                    </a>
               </CardActions>
 
               <Modal
@@ -231,12 +238,12 @@ export default function PeoplePage() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button><a size="small" color="primary" href='mailto:mgoodwin@consol-usa.com'>
-                  Email
-                  </a></Button>
-                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/malcolmgoodwin/'>
-                  LinkedIn
-                  </a></Button>
+                <a target="_blank" size="small" color="primary" href='mailto:mgoodwin@consol-usa.com'>
+                <EmailIcon></EmailIcon>
+                  </a>
+                <a target="_blank" size="small" color="primary" href='https://www.linkedin.com/in/malcolmgoodwin/'>
+                <LinkedInIcon></LinkedInIcon>
+                  </a>
               </CardActions>
 
             </Card>
@@ -266,12 +273,12 @@ export default function PeoplePage() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button><a size="small" color="primary" href='mailto:megans@consol-usa.com'>
-                  Email
-                </a></Button>
-                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/markeegan/'>
-                  LinkedIn
-                </a></Button>
+                <a target="_blank" size="small" color="primary" href='mailto:megans@consol-usa.com'>
+                <EmailIcon></EmailIcon>
+                </a>
+                <a target="_blank" size="small" color="primary" href='https://www.linkedin.com/in/markeegan/'>
+                <LinkedInIcon></LinkedInIcon>
+                </a>
               </CardActions>
 
             </Card>
@@ -301,12 +308,12 @@ export default function PeoplePage() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button><a size="small" color="primary" href='mailto:rfosu@consol-usa.com'>
-                  Email
-                  </a></Button>
-                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/rachealfosu/'>
-                  LinkedIn
-                  </a></Button>
+                <a target="_blank" size="small" color="primary" href='mailto:rfosu@consol-usa.com'>
+                <EmailIcon></EmailIcon>
+                  </a>
+                <a target="_blank" size="small" color="primary" href='https://www.linkedin.com/in/rachealfosu/'>
+                <LinkedInIcon></LinkedInIcon>
+                  </a>
               </CardActions>
 
             </Card>
@@ -337,12 +344,12 @@ export default function PeoplePage() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button><a size="small" color="primary" href='mailto:pcohen@consol-usa.com'>
-                  Email
-                    </a></Button>
-                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/patrick-cohen-094a1b14/'>
-                  LinkedIn
-                    </a></Button>
+                <a target="_blank" size="small" color="primary" href='mailto:pcohen@consol-usa.com'>
+                <EmailIcon></EmailIcon>
+                    </a>
+                <a target="_blank" size="small" color="primary" href='https://www.linkedin.com/in/patrick-cohen-094a1b14/'>
+                <LinkedInIcon></LinkedInIcon>
+                    </a>
               </CardActions>
 
             </Card>
@@ -372,12 +379,12 @@ export default function PeoplePage() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button><a size="small" color="primary" href='mailto:jspence@consol-usa.com'>
-                  Email
-                  </a></Button>
-                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/josephspenceii/'>
-                  LinkedIn
-                  </a></Button>
+                <a target="_blank" size="small" color="primary" href='mailto:jspence@consol-usa.com'>
+                <EmailIcon></EmailIcon>
+                  </a>
+                <a target="_blank" size="small" color="primary" href='https://www.linkedin.com/in/josephspenceii/'>
+                <LinkedInIcon></LinkedInIcon>
+                  </a>
               </CardActions>
 
             </Card>
@@ -408,12 +415,12 @@ export default function PeoplePage() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button><a size="small" color="primary" href='mailto:ncohen@consol-usa.com'>
-                  Email
-                </a></Button>
-                <Button><a size="small" color="primary" href='https://www.linkedin.com/in/nagelah-cohen-6020038/'>
-                  LinkedIn
-                </a></Button>
+                <a target="_blank" size="small" color="primary" href='mailto:ncohen@consol-usa.com'>
+                <EmailIcon></EmailIcon>
+                </a>
+                <a target="_blank" size="small" color="primary" href='https://www.linkedin.com/in/nagelah-cohen-6020038/'>
+                <LinkedInIcon></LinkedInIcon>
+                </a>
               </CardActions>
 
             </Card>
@@ -425,22 +432,22 @@ export default function PeoplePage() {
 
       {/* ================= SECTION DIVIDER ================= */}
 
-            {/* <Divider></Divider> */}
+      {/* <BlueArc></BlueArc>  */}
 
       {/* =================== BOARD =================== */}
 
-      <Container id="board">
+      <Container id="board" className="section">
         <Grid container spacing={1}>
 
         <Grid item xs={12}>
         <Typography 
           variant="h3"
-          style={{ textAlign: "center" }}
+          className="sectionHead"
         >Board</Typography>
         </Grid>
 
         <Grid item xs={12}>
-          <Paper className="boardList">
+          <Paper elevation={0} variant="outlined" className="boardList">
             <Typography variant="body1">
               <List>
                 <ListItem>
@@ -448,39 +455,33 @@ export default function PeoplePage() {
                 Robert Tibbs<br></br>
                 Founder & CEO<br></br>
                 ConSol USA</ListItem>
-                <br></br>
-                <br></br>
+
                 <ListItem>
                 Jim Agnew<br></br>
                 VP Corporate Development<br></br>
                 Village MD</ListItem>
-                <br></br>
-                <br></br>
+
                 <ListItem>
                 Dr. Taiwo Kayode<br></br>
                 Chief Consulting Engineer<br></br>
                 Exxon Mobile</ListItem>
-                <br></br>
-                <br></br>
+
                 <ListItem>
                 Vice Chairman<br></br>
                 Demola Eleso<br></br>
                 Chairman<br></br>
                 Contact Solutions Ltd</ListItem>
-                <br></br>
-                <br></br>
+
                 <ListItem>
                 Tom Knight<br></br>
                 Chief Operating Officer<br></br> 
                 Genesys Work</ListItem>
-                <br></br>
-                <br></br>
+
                 <ListItem>
                 Mars Shah<br></br>
                 Chief Operating Officer<br></br>
                 ConSol USA</ListItem>
-                <br></br>
-                <br></br>
+
                 <ListItem>
                 Dr. Marc Spencer <br></br>
                 CEO <br></br>
@@ -496,31 +497,62 @@ export default function PeoplePage() {
 
 {/* ================= SECTION DIVIDER ================= */}
 
-  <PageGraphic></PageGraphic>
+      {/* <BlueArc></BlueArc> */}
 
 {/* =================== ADVISORS =================== */}
 
-      <Container id="advisors">
+      <Container id="advisors" className="section">
         <Grid container spacing={1}>
 
         <Grid item xs={12}>
         <Typography 
           variant="h3"
-          style={{ textAlign: "center" }}
+          className="sectionHead"
         >Advisors</Typography>
         </Grid>
 
-        <Grid item xs={4}>
-          <Paper>person</Paper>
-        </Grid>
+          <Grid item xs={12}>
+            <Paper elevation={0} variant="outlined" className="boardList">
+              <Typography variant="body1">
+                <List>
+                  <ListItem>
+                  Ralph Loura<br />
+                  SVP/CIO<br />
+                  Lumentum</ListItem>
 
-        <Grid item xs={4}>
-          <Paper>person</Paper>
-        </Grid>
+                  <ListItem>
+                  Emily Schaffer<br />
+                  Managing Director<br />
+                  Year Up</ListItem>
 
-        <Grid item xs={4}>
-          <Paper>person</Paper>
-        </Grid>
+                  <ListItem>
+                  Randy Lewis<br />
+                  Partner - Wilson Sonsini<br /> 
+                  Goodrich & Rosati</ListItem>
+
+                  <ListItem>
+                  Roberto Romano<br />
+                  Former VP Enterprise Partnerships<br /> 
+                  Mastercard</ListItem>
+
+                  <ListItem>
+                  Paul Musselman<br />
+                  Managing Director <br />
+                  Alvarez & Marsal</ListItem>
+
+                  <ListItem>
+                  Dr. Jahanzeb Sherwani<br />
+                  Founder and CEO<br />
+                  Screenhero</ListItem>
+
+                  <ListItem>
+                  Keith Rosmarin<br />
+                  Registered Industrial Psychologist</ListItem>
+                </List>
+              </Typography>
+            </Paper>
+          </Grid>
+
 
         </Grid>
       </Container>

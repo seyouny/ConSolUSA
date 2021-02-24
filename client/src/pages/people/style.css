@@ -13,9 +13,9 @@ h1 {
 
 .boardList {
     column-count: 2;
-    text-align: center;
     margin: auto;
-    width: 40%;
+    width: 50%;
+    padding: 5%;
 }
 
 .boardList li {
@@ -30,23 +30,41 @@ h1 {
     height: auto
 }
 
-.founder {
+#founder {
     position: relative;
     margin: 40px 10% 0 10%;
     height: fit-content;
 }
 
-#staff {
+.sectionHead {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+.section {
+    padding-top: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5%;
+}
+
+#staffContainer {
     margin-top: -2%;
-    /* margin-bottom: 5%;
-    margin-right: 10%;
-    margin-left: 10%; */
     background-color: #164e85;
     /* background-image: linear-gradient(to left, #dd690c 0%, #e37c0e 51%, #efa313 100%); */
 }
 
+#staffCards {
+    /* margin: 5% 20% 5% 20%; */
+    padding-top: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5%;
+}
+
 .staffCard {
-    margin: 5%;
+    margin: 7px;
 }
 
 .staffModal {
@@ -97,10 +115,10 @@ h1 {
     padding: 40px;
 }
 
-.submenu {
+/* .submenu {
     text-align: center;
-    margin: 40px 20% 0 20%;
-}
+    margin: 40px auto 0 auto;
+} */
 
 .staffcard {
   max-width: 400px;

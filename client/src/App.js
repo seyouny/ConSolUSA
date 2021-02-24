@@ -1,4 +1,3 @@
-import NavHeader from './components/navheader/';
 import MenuIcon from '@material-ui/icons/Menu';
 import HomePage from './pages/home/';
 import PeoplePage from './pages/people/';
@@ -9,10 +8,28 @@ import NewsPage from './pages/news/';
 import ContactPage from './pages/contact/';
 import Footer from './components/footer/index';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom';
+import { createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
 import $ from 'jquery';
 
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: '#44719d',
+      main: '#164e85',
+      dark: '#0f365d',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#e3873c',
+      main: '#dd690c',
+      dark: '#6c0e23',
+      contrastText: '#561643',
+    },
+  },
+});
 
 function App() {
 
@@ -30,7 +47,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <NavHeader></NavHeader> */}
 
       <Router>
 
