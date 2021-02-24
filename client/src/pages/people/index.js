@@ -110,7 +110,7 @@ export default function PeoplePage() {
       <PageGraphic></PageGraphic>
 
       {/* ================= STAFF PHOTOS ================= */}
-      <Container id="staff">
+      <Container id="staff" maxWidth="false">
 
         <Grid container spacing={1}>
 
