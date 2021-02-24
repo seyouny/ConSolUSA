@@ -12,10 +12,25 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import PageBreak from "./page_graphic_blue_white.png";
+import PageBreak from "./page_graphic_blue_orange.png";
+import Divider from "../../components/divider";
+import { makeStyles } from "@material-ui/core/styles";
 import "./style.css";
 
+const useStyles = makeStyles({
+  pageDiv: {
+    paddingLeft: "0",
+    paddingRight: "0",
+  },
+  divImage: {
+    width: "100%",
+  },
+});
+
 export default function WorkPage() {
+
+  const classes = useStyles();
+
   return (
     <div>
       <Banner></Banner>
@@ -338,7 +353,6 @@ export default function WorkPage() {
           Offices
         </Typography>
         <Grid container maxWidth="false" className="office-inner" spacing={6}>
-          {/* <Grid item xs={12} sm={1.5}></Grid> */}
           <Grid item xs={12} sm={3}>
             <Card className="w-office">
               <CardActionArea>
@@ -347,7 +361,6 @@ export default function WorkPage() {
                   component="img"
                   alt=""
                   height="200"
-                  // image="./ggbridge.jpg"
                   title=""
                 />
                 <CardContent>
@@ -359,8 +372,9 @@ export default function WorkPage() {
                     color="textSecondary"
                     component="p"
                   >
-                    XXXX Suite XXXXX, XXXX, XX XXXXX, <br />
-                    USA +1(555) 555-5555
+                    Oakland, CA <br />
+                    west@consol-usa.com <br />
+                    (555) 555-5555
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -386,8 +400,9 @@ export default function WorkPage() {
                     color="textSecondary"
                     component="p"
                   >
-                    XXXX Suite XXXXX, XXXX, XX XXXXX, <br />
-                    USA +1(555) 555-5555
+                    Chicago, IL <br />
+                    midwest@consol-usa.com <br />
+                    (555) 555-5555
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -413,36 +428,36 @@ export default function WorkPage() {
                     color="textSecondary"
                     component="p"
                   >
-                    8 The Green, Suite #8212, Dover, DE 19901, USA +1(302)
-                    401-6537
+                    Dover, DE <br />
+                    east@consol-usa.com <br />
+                    (302) 401-6537
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          {/* <Grid item xs={12} sm={1.5}></Grid> */}
         </Grid>
 
-        <Container>
+        {/* <Container fixed>
           <Grid>
             <Grid item xs={12} className="workPageBreak">
               <img src={PageBreak} alt="page graphic"></img>
             </Grid>
           </Grid>
-        </Container>
+        </Container> */}
       </Container>
 
-      {/* BUILD ELEMENTS BELOW HERE. FEEL FREE TO EDIT THE ITEMS, JUST A TOOLKIT. */}
-
-      {/* <Container className="proj-area">
-        <Container className="proj-card-container"></Container>
-
-        <Container>
-          <Typography variant="h4" style={{ textAlign: "center" }}>
-            Geograhic Focus
-          </Typography>
-        </Container>
-      </Container> */}
+      <Container className={classes.pageDiv} maxWidth="false">
+        <Grid container>
+          <Grid item xs={12} className="workPageBreak">
+            <img
+              className={classes.divImage}
+              src={PageBreak}
+              alt="page graphic"
+            ></img>
+          </Grid>
+        </Grid>
+      </Container>
     </div>
   );
 }
