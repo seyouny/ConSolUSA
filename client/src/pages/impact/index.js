@@ -49,14 +49,14 @@ export default function ImpactPage() {
 
             <Container id="mission" className="section">
 
-                <Paper elevation={0}>
+                <Paper elevation={0} variant="outlined" className="bigMargin">
 
                     <Grid container spacing={1}>
 
                         <Grid item xs={12}>
 
                             <Typography variant="h3" className="sectionHead">Our Mission</Typography>
-                            <Typography variant="body1" className="bigMargin">
+                            <Typography variant="body1">
                                 We believe there is enormous untapped energy, ingenuity, and talent
                                 in communities that traditionally have been overlooked. Our mission
                                 is to build an ecosystem that brings that talent "online" to both
