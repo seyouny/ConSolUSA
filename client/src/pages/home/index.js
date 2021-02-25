@@ -19,7 +19,7 @@ export default function HomePage() {
           </div>
 
           <div className="border">
-            <img src={Border} alt="border curve"></img>
+            <img src={Border} alt="border curve" className="homePgDiv"></img>
           </div>
 
         </Grid>

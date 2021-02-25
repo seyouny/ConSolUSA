@@ -12,8 +12,8 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import PageBreak from "./page_graphic_blue_orange.png";
-import Divider from "../../components/divider";
+import PageBreak from "./divider_blue_orange.png";
+// import Divider from "../../components/divider";
 import { makeStyles } from "@material-ui/core/styles";
 import "./style.css";
 
@@ -24,6 +24,7 @@ const useStyles = makeStyles({
   },
   divImage: {
     width: "100%",
+    height: "100%"
   },
 });
 
