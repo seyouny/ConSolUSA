@@ -11,8 +11,8 @@
   }
 
 .row {
-    margin-left:15%;
-    margin-right:15%;
+    margin-left:10%;
+    margin-right:10%;
     margin-top: 3%;
     margin-bottom: 3%;
 }
@@ -24,10 +24,23 @@
     padding-right: 5%;
 }
 
-.column {
+.columnMiddle {
     float: left;
-    width: 20%;
+    width: 25%;
     text-align: left;
+}
+
+.columnRight {
+    float: left;
+    width: 10%;
+    text-align: left;
+}
+
+.icon {
+ }
+
+.indent {
+    padding-left: 1.8rem;
 }
 
 .keyBullets {
