@@ -7,9 +7,28 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Banner from '../../components/banner/';
+import TextField from '@material-ui/core/TextField';
+import PageBreak from "./page_graphic_blue_orange.png";
+import { makeStyles } from "@material-ui/core/styles";
 import './style.css';
 
+
+const useStyles = makeStyles({
+    pageDiv: {
+      paddingLeft: "0",
+      paddingRight: "0",
+    },
+    divImage: {
+      width: "100%",
+      marginTop: "-50%",
+    //   paddingTop: "-105px",
+      zIndex: "100",
+    },
+  });
+
 export default function ContactPage() {
+
+    const classes = useStyles();
 
     return (
 
@@ -17,41 +36,49 @@ export default function ContactPage() {
 
             <Banner></Banner>
 
-            <Container className="main">
+            <Container>
 
-                {/* BUILD ELEMENTS BELOW HERE. FEEL FREE TO EDIT THE ITEMS, JUST A TOOLKIT. */}
+                <Paper className="contactForm">
 
-                <div>
+                    <Grid container spacing={1}>
 
-                    <Paper className="padded-section">
+                        <Grid item xs={12}>
 
-                        <Grid container spacing={1}>
+                            <Typography variant="h3" className="contactHead">Contact Us</Typography>
+                            <Typography variant="body1" className="contactHead">Thanks for stopping by. We'd love to hear from you. Give us a few details and we'll get right back to you.</Typography>
 
-                            <Grid item xs={12}>
+                            <form noValidate autoComplete="off">
 
-                                <Typography variant="h3">Contact Us</Typography>
-                                <Typography variant="body1">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                euismod in pellentesque. Pellentesque id nibh tortor id aliquet lectus proin.
-                                Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Egestas
-                                integer eget aliquet nibh praesent tristique. Imperdiet massa tincidunt nunc pulvinar sapien et.
-                                Vel turpis nunc eget lorem dolor sed viverra. Montes nascetur ridiculus mus mauris vitae.
-                                Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Ultricies mi quis hendrerit
-                                dolor magna. Dolor morbi non arcu risus quis varius. Fames ac turpis egestas integer.
-                                Amet nisl purus in mollis nunc sed. Neque viverra justo nec ultrices dui sapien eget mi proin.
+                                <TextField className="formBox" id="firstName" margin="normal" label="First Name" type="text" variant="outlined" />
+                                <TextField className="formBox" id="lastName" margin="normal" label="Last Name" type="text" variant="outlined" /><br />
+                                <TextField className="formBox" id="business" margin="normal" label="Business Affiliation" type="text" variant="outlined" />
+                                <TextField className="formBox" id="position" margin="normal" label="Position" type="text" variant="outlined" /><br />
+                                <TextField className="formBox" id="phone" margin="normal" label="Phone" type="text" variant="outlined" />
+                                <TextField className="formBox" id="email" margin="normal" label="Email" type="text" variant="outlined" /><br />
+                                <TextField className="formBox" id="message" margin="normal" label="Message" type="text" fullWidth multiline rows={4} placeholder="Hi. What's on your mind?" variant="outlined" />
 
-                                </Typography>
+                                <Button id="submitBtn" variant="contained" type="submit" color="secondary">Submit</Button>
 
-                            </Grid>
+                            </form>
 
                         </Grid>
 
-                    </Paper>
+                    </Grid>
 
-                </div>
+                </Paper>
 
+            </Container>
 
-
+            <Container className={classes.pageDiv} maxWidth="false">
+                <Grid container>
+                    <Grid item xs={12}>
+                        <img
+                            className={classes.divImage}
+                            src={PageBreak}
+                            alt="page graphic"
+                        ></img>
+                    </Grid>
+                </Grid>
             </Container>
 
 
