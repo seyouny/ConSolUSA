@@ -18,7 +18,8 @@ import PageGraphic from '../../components/divider';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import Grow from '@material-ui/core/Grow';
-// import BlueArc from './bluearc.jpg';
+import BlueArc from '../../components/bluearc';
+import MaroonArc from '../../components/maroonarc';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -82,7 +83,7 @@ export default function PeoplePage() {
 
           <Grid item xs={8}>
 
-            <Typography variant="h3">Founder's Story</Typography>
+            <Typography variant="h3" className="sectionHead">Founder's Story</Typography>
             <Typography variant="body1"><i>From humble beginnings...</i></Typography>
 
             <Typography variant="body1" paragraph>
@@ -232,7 +233,7 @@ export default function PeoplePage() {
                 </Typography>
 
                   <Typography gutterBottom variant="body1" component="h3" className="title">
-                    President, Chief Commercial Officer
+                    President
                 </Typography>
 
                 </CardContent>
@@ -432,7 +433,7 @@ export default function PeoplePage() {
 
       {/* ================= SECTION DIVIDER ================= */}
 
-      {/* <BlueArc></BlueArc>  */}
+      <BlueArc></BlueArc> 
 
       {/* =================== BOARD =================== */}
 
@@ -497,7 +498,7 @@ export default function PeoplePage() {
 
 {/* ================= SECTION DIVIDER ================= */}
 
-      {/* <BlueArc></BlueArc> */}
+      <MaroonArc></MaroonArc>
 
 {/* =================== ADVISORS =================== */}
 
@@ -508,6 +509,7 @@ export default function PeoplePage() {
         <Typography 
           variant="h3"
           className="sectionHead"
+          style={{ color: "white" }}
         >Advisors</Typography>
         </Grid>
 

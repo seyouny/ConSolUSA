@@ -1,0 +1,41 @@
+
+.contactForm {
+    margin-top: 3em;
+    height: 55vh;
+    margin-bottom: 6em;
+    /* justify-items: center; */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 6em;
+}
+
+.contactForm:hover {
+    box-shadow: 0 0 11px cadetblue; 
+}
+
+.contactHead {
+    margin-top: 0;
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+
+.contactHead * {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+form {
+    margin-top: 10px;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.formBox {
+    padding: 10px;
+    margin: 10px !important;
+}
+
+#submitBtn {
+    /* position: relative; */
+    transform: translate(600%, -135%)
+}

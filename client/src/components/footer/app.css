@@ -37,7 +37,12 @@
 }
 
 .icon {
- }
+    position: relative;
+    /* Adjust these values accordingly */
+    top: 8px;
+    left: 0;
+    padding-right: 5px;
+}
 
 .indent {
     padding-left: 1.8rem;
@@ -50,9 +55,13 @@
     padding-left: 0;
 }
 
-.row:after {
+#readMore {
+    padding-left: 3px;
+}
+
+.row::after {
     content: "";
     display: table;
     clear: both;
     text-align: left;
-  }
+}
