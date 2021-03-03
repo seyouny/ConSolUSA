@@ -442,7 +442,7 @@ export default function PartnersPage() {
             </Paper> */}
           </Grid>
           <Grid item xs={12} sm={3} className="logo-grid">
-            <a href="https://www.yearup.org/" target="_blank">
+            <a href="https://www.yearup.org/" target="_blank" rel="noreferrer">
               <img src={Yearup} alt="logo" className="talent-logo2" />
             </a>
             {/* <Paper>
@@ -467,7 +467,7 @@ export default function PartnersPage() {
           </Grid>
 
           <Grid item xs={12} sm={3} className="logo-grid">
-            <a href="https://genesysworks.org/" target="_blank">
+            <a href="https://genesysworks.org/" target="_blank" rel="noreferrer">
               <img src={Genesys} alt="logo" className="talent-logo3" />
             </a>
             {/* <Paper>
@@ -491,7 +491,7 @@ export default function PartnersPage() {
             </Paper> */}
           </Grid>
           <Grid item xs={12} sm={3} className="logo-grid">
-            <a href="https://merrittsecurity.com/" target="_blank">
+            <a href="https://merrittsecurity.com/" target="_blank" rel="noreferrer">
               <img src={Merritt} alt="logo" className="talent-logo4" />
             </a>
             {/* <Paper>

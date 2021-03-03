@@ -28,14 +28,14 @@
   },
   "dependencies": {
     "@material-ui/icons": "^4.11.2",
+    "@material-ui/styles": "^4.11.3",
     "bootstrap": "^4.6.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "jquery": "^3.5.1",
     "material-auto-rotating-carousel": "^3.0.2",
-    "react-bootstrap": "^1.5.0",
     "react-foundation": "^0.9.6",
-    "react-items-carousel": "^2.8.0",
+    "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-swipeable-views": "^0.13.9"
   }

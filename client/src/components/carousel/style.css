@@ -1,0 +1,35 @@
+.slider {
+    position: relative;
+    height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    font-size: 3rem;
+    color: white;
+    z-index: 1000;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: white;
+    z-index: 1000;
+    cursor: pointer;
+    user-select: none;
+}
+
+.heroImage {
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+}

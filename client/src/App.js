@@ -8,7 +8,7 @@ import NewsPage from './pages/news/';
 import ContactPage from './pages/contact/';
 import Footer from './components/footer/index';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
 import $ from 'jquery';
