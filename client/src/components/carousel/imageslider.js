@@ -16,7 +16,7 @@ const ImageSlider = ({slides}) => {
 
             {Slides.map((slide, index) => {
                     return (
-                        <img src={slide.image} alt="alt value" className="hero" />
+                        <img src={slide.image} alt="alt value" className="heroImage" />
                     )
 
                 })

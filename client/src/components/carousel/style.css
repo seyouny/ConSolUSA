@@ -1,6 +1,6 @@
 .slider {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -30,6 +30,6 @@
 
 .heroImage {
     width: 100vw;
-    height: 600px;
+    height: 97vh;
     object-fit: cover;
 }
