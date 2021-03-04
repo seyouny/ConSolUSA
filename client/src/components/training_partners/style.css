@@ -1,0 +1,35 @@
+.talent-card-container {
+  padding: 0 30px !important;
+  margin-bottom: 15rem;
+  margin-top: 3rem;
+}
+
+.talent-area-header {
+  padding-bottom: 1rem;
+  color: #164e85;
+}  
+
+.logo-grid {
+    /* margin-top: 4rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-style: solid;
+    border-color: blue;
+    border-width: 1px; */
+}
+
+.train-logo1 {
+    max-height: 55px;
+    width: auto;
+}
+
+.train-logo2 {
+    max-height: 70px;
+    width: auto;
+}
+
+.train-logo3 {
+    max-height: 35px;
+    width: auto;
+}

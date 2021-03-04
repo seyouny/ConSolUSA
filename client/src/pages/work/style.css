@@ -67,7 +67,8 @@ hr {
 }
 
 .geo-focus-img {
-  height: 500px;
+  height: 400px;
+  width: 900px;
   background-image: url("./geo-focus-pic.jpg");
   background-position: center;
   background-repeat: no-repeat;
