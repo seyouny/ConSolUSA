@@ -14,10 +14,25 @@ import Academicpartners from "../../components/academic_partners";
 import Technologypartners from "../../components/technology_partners";
 import Govpartners from "../../components/government_partners";
 import { makeStyles } from "@material-ui/core/styles";
+import PageBreak from "../work/divider_blue_orange.png";
 
 import "./style.css";
 
+const useStyles = makeStyles({
+  pageDiv: {
+    paddingLeft: "0",
+    paddingRight: "0",
+  },
+  divImage: {
+    width: "100%",
+    height: "100%",
+  },
+});
+
 export default function PartnersPage() {
+
+  const classes = useStyles();
+
   return (
     <div>
       <Banner></Banner>
@@ -94,6 +109,18 @@ export default function PartnersPage() {
       <Technologypartners></Technologypartners>
 
       <Govpartners></Govpartners>
+
+      <Container className={classes.pageDiv} maxWidth="false">
+        <Grid container>
+          <Grid item xs={12} className="workPageBreak">
+            <img
+              className={classes.divImage}
+              src={PageBreak}
+              alt="page graphic"
+            ></img>
+          </Grid>
+        </Grid>
+      </Container>
     </div>
   );
 }

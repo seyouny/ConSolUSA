@@ -1,6 +1,6 @@
 .gov-card-container {
   padding: 0 30px !important;
-  margin-bottom: 15rem;
+  /* margin-bottom: 15rem; */
   margin-top: 3rem;
 }
 
@@ -10,7 +10,7 @@
 }  
 
 .gov-logo1 {
-    max-height: 140px;
+    max-height: 85px;
     width: auto;
 }
 
