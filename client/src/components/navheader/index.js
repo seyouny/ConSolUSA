@@ -7,31 +7,37 @@ export default function NavHeader () {
   return (
 
     <div>
-      <header>
 
-        <Grid container spacing={1} className="menu">
-          <Grid item xs={2}>
-            <a href='/people'>PEOPLE</a>
-          </Grid>
-          <Grid item xs={2}>
-            <a href='/impact'>IMPACT</a>
-          </Grid>
-          <Grid item xs={2}>
-            <a href='/work'>WORK</a>
-          </Grid>
-          <Grid item xs={2}>
-            <a href='/partners'>PARTNERS</a>
-          </Grid>
-          <Grid item xs={2}>
-            <a href='/news'>NEWS</a>
-          </Grid>
-          <Grid item xs={2}>
-            <a href='/contact'>CONTACT</a>
-          </Grid>
+      <nav>
+      <header className = "sticky-shrinknav-header">
 
-        </Grid>
+      <div id="smallScreenNavBar" className="menu align-center sticky-shrinknav-menu">
+        <MenuIcon id="menuIcon" className="hideOnMedUp" onClick={handleMenuClick}></MenuIcon></div>
+          <ul className="menu">
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/people" activeClassName="selectedLink">People</NavLink>
+            </li>
+            <li>
+              <NavLink to="/impact" activeClassName="selectedLink">Impact</NavLink>
+            </li>
+            <li>
+              <NavLink to="/work" activeClassName="selectedLink">Work</NavLink>
+            </li>
+            <li>
+              <NavLink to="/partners" activeClassName="selectedLink">Partners</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" activeClassName="selectedLink">Contact</NavLink>
+            </li>
+          </ul>
+          </header>
 
-      </header>
+        </nav>
+
+
     </div>
 
   )

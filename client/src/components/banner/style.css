@@ -1,3 +1,6 @@
+body{
+  z-index:0;
+}
 h1 {
   color: white;
 }
@@ -6,6 +9,7 @@ h1 {
   margin-right: 5%;
   text-align: right;
 }
+
 
 /* STICKY SHRINK NAVBAR */
 

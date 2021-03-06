@@ -12,6 +12,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
 import $ from 'jquery';
+import Banner from "./components/banner"
 
 
 const theme = createMuiTheme({
@@ -43,16 +44,18 @@ function App() {
       }
       console.log("Menu icon clicked")
     })
-  }  
+  }
+
 
   return (
     <div className="App">
 
       <Router>
 
-      <nav>
-      <div id="smallScreenNavBar" className="hideOnMedUp">
-        <MenuIcon id="menuIcon" className="hideOnMedUp" onClick={handleMenuClick}></MenuIcon></div>
+        <nav id='navBar' className="header-outer">
+          {/* <Banner></Banner> */}
+          <div id="smallScreenNavBar" className="hideOnMedUp header-inner responsive-wrapper">
+            <MenuIcon id="menuIcon" className="hideOnMedUp" onClick={handleMenuClick}></MenuIcon></div>
           <ul className="menu">
             <li>
               <NavLink to="/">Home</NavLink>
@@ -75,17 +78,17 @@ function App() {
           </ul>
         </nav>
 
-          <Switch>
+        <Switch>
 
-              <Route exact path="/" component={HomePage}/>              
-              <Route exact path="/people" component={PeoplePage}/>
-              <Route exact path="/impact" component={ImpactPage}/>
-              <Route exact path="/work" component={WorkPage}/>
-              <Route exact path="/partners" component={PartnersPage}/>
-              <Route exact path="/news" component={NewsPage}/>
-              <Route exact path="/contact" component={ContactPage}/>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/people" component={PeoplePage} />
+          <Route exact path="/impact" component={ImpactPage} />
+          <Route exact path="/work" component={WorkPage} />
+          <Route exact path="/partners" component={PartnersPage} />
+          <Route exact path="/news" component={NewsPage} />
+          <Route exact path="/contact" component={ContactPage} />
 
-          </Switch>
+        </Switch>
       </Router>
 
       <Footer></Footer>
