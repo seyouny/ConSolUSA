@@ -17,8 +17,8 @@ export default function HomePage() {
 
             <img className="herobrand" src={logo} alt="ConSol USA logo"></img>
 
-          <div className="border">
-            <img src={Border} alt="border curve" className="homePgDiv"></img>
+          <div>
+            <img src={Border} alt="border curve" className="border"></img>
           </div>
 
     </div>
