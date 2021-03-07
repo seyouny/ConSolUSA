@@ -126,7 +126,7 @@ export default function PeoplePage() {
         <Typography 
           variant="h3"
           style={{ textAlign: "center", color: "white" }}
-        >Leadership Team</Typography>
+        >Staff</Typography>
         </Grid>
 
           <Grid item xs={3}>
@@ -428,6 +428,151 @@ export default function PeoplePage() {
 
           </Grid>
 
+          <Grid item xs={3}>
+
+          <Card className="staffCard">
+
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Kendall Norris"
+                height="140"
+                image="https://img1.wsimg.com/isteam/ip/c75c11ac-84a2-47f7-94f0-8f5c6616f844/Kendall%20Norris.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:388,h:194,cg:true"
+                title="Kendall Norris"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2" className="name">
+                  Kendall Norris
+              </Typography>
+
+                <Typography gutterBottom variant="body1" component="p" className="title">
+                  Chief Operating Officer
+              </Typography>
+
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <a target="_blank" size="small" color="primary" href='mailto:knorris@consol-usa.com'>
+              <EmailIcon></EmailIcon>
+              </a>
+              <a target="_blank" size="small" color="primary" href='https://www.linkedin.com/in/knorris-glf/'>
+              <LinkedInIcon></LinkedInIcon>
+              </a>
+            </CardActions>
+
+          </Card>
+
+          </Grid>
+
+          <Grid item xs={3}>
+
+          <Card className="staffCard">
+
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Racheal Fosu"
+                height="140"
+                image="https://img1.wsimg.com/isteam/ip/c75c11ac-84a2-47f7-94f0-8f5c6616f844/RFosu%20Bio%20Picture.jpeg/:/cr=t:2.83%25,l:0%25,w:100%25,h:94.34%25/rs=w:388,h:194,cg:true"
+                title="Racheal Fosu"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2" className="name">
+                  Racheal Fosu
+              </Typography>
+
+                <Typography gutterBottom variant="body1" component="p" className="title">
+                  Chief Technology Advisor
+              </Typography>
+
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <a target="_blank" size="small" color="primary" href='mailto:rfosu@consol-usa.com'>
+              <EmailIcon></EmailIcon>
+              </a>
+              <a target="_blank" size="small" color="primary" href='https://www.linkedin.com/in/rachealfosu/'>
+              <LinkedInIcon></LinkedInIcon>
+              </a>
+            </CardActions>
+
+          </Card>
+
+          </Grid>
+
+          <Grid item xs={3}>
+
+          <Card className="staffCard">
+
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Elidy Guillaume"
+                height="140"
+                image="https://img1.wsimg.com/isteam/ip/c75c11ac-84a2-47f7-94f0-8f5c6616f844/IMG_0134-0002.jpeg/:/cr=t:9.68%25,l:0%25,w:100%25,h:80.65%25/rs=w:388,h:194,cg:true"
+                title="Elidy Guillaume"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2" className="name">
+                  Elidy Guillaume
+              </Typography>
+
+                <Typography gutterBottom variant="body1" component="p" className="title">
+                  Manager, Accounting
+              </Typography>
+
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <a target="_blank" size="small" color="primary" href='mailto:eguillaume@consol-usa.com'>
+              <EmailIcon></EmailIcon>
+              </a>
+              <a target="_blank" size="small" color="primary" href='http://www.linkedin.com/in/elidy-guillaume-mba-3955a16b/'>
+              <LinkedInIcon></LinkedInIcon>
+              </a>
+            </CardActions>
+
+          </Card>
+
+          </Grid>
+
+          <Grid item xs={3}>
+
+            <Card className="staffCard">
+
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Joe Nicholson"
+                  height="140"
+                  image="https://picsum.photos/388/194"
+                  title="Joe Nicholson"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2" className="name">
+                    Joe Nicholson
+                </Typography>
+
+                  <Typography gutterBottom variant="body1" component="p" className="title">
+                    Marketing & Communications Mgr
+                </Typography>
+
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <a target="_blank" size="small" color="primary" href='mailto:jnicholson@consol-usa.com'>
+                <EmailIcon></EmailIcon>
+                </a>
+                <a target="_blank" size="small" color="primary" href='http://www.linkedin.com/in/elidy-guillaume-mba-3955a16b/'>
+                <LinkedInIcon></LinkedInIcon>
+                </a>
+              </CardActions>
+
+            </Card>
+
+            </Grid>
+
+
         </Grid>
       </Container>
 
@@ -518,7 +663,7 @@ export default function PeoplePage() {
               <Typography variant="body1">
                 <List>
                   <ListItem>
-                  Ralph Loura<br />
+                  Ralph Loura<br></br>
                   SVP/CIO<br />
                   Lumentum</ListItem>
 
