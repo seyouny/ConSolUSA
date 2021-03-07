@@ -91,7 +91,7 @@ export default function ImpactPage() {
 
             </Container>
 
-            <Container className="section carouselBkg" maxWidth="false">
+            <Container className="section carouselBkg" maxWidth={false}>
 
                 <Paper elevation={3} id="slider">
 
