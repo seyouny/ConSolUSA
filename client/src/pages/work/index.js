@@ -16,6 +16,7 @@ import PageBreak from "./divider_blue_orange.png";
 // import Divider from "../../components/divider";
 import { makeStyles } from "@material-ui/core/styles";
 import "./style.css";
+import { GridContainer } from "react-foundation";
 
 const useStyles = makeStyles({
   pageDiv: {
@@ -309,8 +310,14 @@ export default function WorkPage() {
         >
           Geographic Focus
         </Typography>
-        <Box className="geo-focus-img">
-          {/* <Box pt={5}>
+        <Grid container>
+          <Grid item sm={2}></Grid>
+          <Grid item xs={12} sm={8} className="geo-focus-img"></Grid>
+          <Grid item sm={2}></Grid>
+        </Grid>
+
+        {/* <Box className="geo-focus-img"> */}
+        {/* <Box pt={5}>
             <Typography
               variant="h3"
               style={{ textAlign: "center", fontWeight: "900", color: "white" }}
@@ -318,7 +325,7 @@ export default function WorkPage() {
               Geographic Focus
             </Typography>
           </Box> */}
-        </Box>
+        {/* </Box> */}
 
         <Container>
           <Box p={10}>

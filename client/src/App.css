@@ -1,3 +1,21 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --header-outer-height: 110px;
+  --header-inner-height: 70px;
+  --header-height-difference: calc(
+    var(--header-outer-height) - var(--header-inner-height)
+  );
+  --header-bg: #fff;
+}
+/* .sticky-shrinknav-menu{
+  position: absolute;
+} */
+
 html, h1, h2, h3, h4, h5, p *
 {
    font-family: 'Roboto' !important;
@@ -153,6 +171,33 @@ h1, h2 {
 /* Hide the link that should open and close the topnav on small screens */
 .menu .icon {
   display: none;
+}
+/* Sticky header */
+.header-outer {
+  /* height: var(--header-outer-height); */
+  position: sticky;
+  top: calc(
+    var(--header-height-difference) * -1
+  ); 
+  display: flex;
+  align-items: center;
+  z-index: 99;
+
+  background-color:rgba(0,0,0,0.5);
+  /* box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.1); */
+}
+
+.header-inner {
+  height: var(--header-inner-height);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:rgba(156, 26, 26, 0.534);
+
 }
 
 @keyframes App-logo-spin {
