@@ -14,15 +14,15 @@
     right: 0;
     z-index: 20;
     background: transparent;
-    /* width: 100%; */
 }
 
 .hero {
     position: relative;
     top: 0;
     height: 100vh;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./front-photo-min.jpeg") 10% 30% no-repeat;
+    width: 100vw;
+    object-fit: cover;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./front-photo-min.jpeg") 10% 30% no-repeat; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -34,22 +34,26 @@
     transition-duration: 2s;
     background: transparent;
     width: 35%;
-    margin-top: 40vh;
+    top: 20%;
+    /* margin-top: 40vh; */
     margin-left: 30%;
 }
 
 .homePgDiv {
     height: 100%;
+    bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
 
     .herobrand {
+        position: fixed;
         transition: ease-in-out;
         transition-duration: 2s;
         width: 65%;
-        margin-top: 45vh;
-        margin-left: 30%;
+        top: 50vh;
+        /* margin-top: 45vh; */
+        /* margin-left: 30%; */
     } 
 
 }
