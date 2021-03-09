@@ -42,7 +42,6 @@ const StaffCards = ({staff}) => {
     const open = Boolean(anchorEl);
     const id = open ? "simple-popover" : undefined;
 
-
     return (
             <section className="staffCards" maxWidth={false}>
 
@@ -73,10 +72,10 @@ const StaffCards = ({staff}) => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <a size="small" color="primary" href="mailto:{staff.email}">
+                                <a size="small" color="primary" href={"mailto:" + staff.email}>
                                 <EmailIcon></EmailIcon>
                                 </a>
-                                <a size="small" color="primary" target="_blank" href="{staff.linkedIn}">
+                                <a size="small" color="primary" target="_blank" href={staff.linkedIn}>
                                 <LinkedInIcon></LinkedInIcon>
                                 </a>
                                 <a size="small" color="primary" target="_blank" onClick={handleClick}>
@@ -99,14 +98,7 @@ const StaffCards = ({staff}) => {
                                     }}
                                 >
                                     <Typography className={classes.typography}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    {staff.bio}
                                     </Typography>
                                 </Popover>
                 

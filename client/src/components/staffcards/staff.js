@@ -8,6 +8,7 @@ import mark from './mark.jpg';
 import joseph from './joseph.jpg';
 import nagelah from './nagelah.jpg';
 import elidy from './elidy.jpg';
+import joe from './joe.jpg';
 
 
 export const Staff = [
@@ -91,5 +92,14 @@ export const Staff = [
         linkedIn: "http://www.linkedin.com/in/elidy-guillaume-mba-3955a16b/",
         email: "eguillaume@consol-usa.com",
         bio: "Over 19 years of experience in the Accounting/Finance industry, with an Executive MBA and a bachelor's degree in accounting. Work for various industries including Healthcare and Telecommunication. Well trained in all areas of financial accounting, reporting and budgeting. Knowledgeable in various accounting software and reporting packages."
+    },{ 
+        firstName: "Joe",
+        lastName: "Nicholson",
+        title: "Director, Marketing & Communications",
+        image: joe,
+        linkedIn: "https://www.linkedin.com/in/joenicholson24/",
+        email: "jnicholson@consol-usa.com",
+        bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }
+
 ]

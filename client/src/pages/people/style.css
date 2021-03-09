@@ -9,6 +9,11 @@ h1 {
     color: blue;
 }
 
+#board {
+    margin-top: -6%;
+    margin-bottom: -20%;
+}
+
 .cardImage {
     max-width: 240;
 }
@@ -61,8 +66,9 @@ h1 {
 }
 
 #staffContainer {
-    margin-top: -2%;
+    margin-top: -25px;
     background-color: #164e85;
+    padding: 3% 15% 3% 15%;
     /* background-image: linear-gradient(to left, #dd690c 0%, #e37c0e 51%, #efa313 100%); */
 }
 

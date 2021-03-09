@@ -1,9 +1,6 @@
 .staffCards {
     width: 100%;
-}
-
-.staffCards img {
-    max-width: 140;
+    margin: auto;
 }
 
 .staffCard {

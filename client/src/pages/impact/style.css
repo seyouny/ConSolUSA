@@ -9,9 +9,58 @@
     background-color: #44719d;
 }
 
+#ecosystem {
+    margin-top: -5%;
+}
+
+#ecosystem:hover {
+    transform: scale(1.2);
+    transition: 2s ease;
+}
+
 h1 {
     color: black;
     text-align: center;
+}
+
+#impactChain1, #impactChain2, 
+#impactChain3, #impactChain4 {
+    float: left;
+    display: inline-block;
+    padding-left: -20px;
+}
+
+#impactChain1 {
+    z-index: -100;
+}
+
+#impactChain2 {
+    z-index: 2;
+}
+
+#impactChain2 {
+    z-index: 3;
+}
+
+#impactChain2 {
+    z-index: 4;
+}
+
+
+#impactChainBox {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+#mission {
+    margin: 10px 10px -10px 10px;
+    padding: 1% 5% 5% 5%;
+}
+
+#mission:hover {
+    background-color: rgb(207, 201, 223);
+    transition: 2s ease;
 }
 
 #slider {
@@ -25,3 +74,27 @@ h1 {
 #partnerHead {
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+
+#impactChain1 {
+    animation: App-logo-spin 2s;
+    transition: 2s ease;
+}
+
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
