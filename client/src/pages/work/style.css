@@ -20,8 +20,12 @@
   margin: 20px !important;
 }
 
+.geo-paragraph-div {
+  margin-top: 2rem !important;
+}
+
 hr {
-  width: 50%;
+  width: 100%;
   height: 1px;
   background-color: #ccc;
   border: none;
@@ -46,13 +50,15 @@ hr {
 
 .proj-type {
   padding: 15px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .proj-type-head {
   padding: 15px 0px;
-  color: rgb(255, 255, 255);
-  background-color: #164e85;
+  color: #164e85;
+  
+  /* color: rgb(255, 255, 255);
+  background-color: #164e85; */
 }
 
 .proj-card-container {
@@ -66,6 +72,11 @@ hr {
   margin-bottom: 5rem;
 }
 
+hr {
+  width: 100%;
+  margin: 0 0px 10px 0 !important;
+}
+
 .geo-focus-img {
   height: 400px;
   width: 900px;
@@ -73,6 +84,10 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.geo-focus-container {
+  margin-bottom: 10rem;
 }
 
 .offices-container {
@@ -102,17 +117,21 @@ hr {
   text-align: center;
 }
 
-/* .divImage {
-  width: 100%;
-} */
+.office-contact-btn:hover {
+  background-image: linear-gradient(to right, #0f365d 0%, #164e85 51%, #44719d 100%);
+  box-shadow: 0 0 11px #44719d; 
+  transition: box-shadow .3s;
+  color: white;
+}
 
-/* .workPageBreak {
-  width: 100vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+.office-contact-btn {
+  margin-top: .5rem !important;
+}
 
-/* .pageBreak1 {
-  background-image: url("./page_graphic_blue_white.png");
-} */
+.office-contact-btn a {
+  text-decoration: none;
+}
+
+.office-location-header {
+  padding-bottom: 0px !important;
+}

@@ -40,7 +40,7 @@ export default function WorkPage() {
       <Container className="proj-btns">
         <div className="submenu">
           <Grid container spacing={1}>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={4}>
               <Button
                 variant="outlined"
                 className="submenu-button"
@@ -50,13 +50,23 @@ export default function WorkPage() {
               </Button>
             </Grid>
 
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={4}>
               <Button
                 variant="outlined"
                 className="submenu-button"
                 href="#g-focus"
               >
                 Geographic Focus
+              </Button>
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+              <Button
+                variant="outlined"
+                className="submenu-button"
+                href="#o-location"
+              >
+                Offices
               </Button>
             </Grid>
           </Grid>
@@ -84,7 +94,7 @@ export default function WorkPage() {
                 >
                   Cybersecurity
                 </Typography>
-                {/* <hr /> */}
+                <hr />
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -111,7 +121,7 @@ export default function WorkPage() {
                 >
                   Quality Engineering
                 </Typography>
-                {/* <hr /> */}
+                <hr />
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -136,7 +146,7 @@ export default function WorkPage() {
                 >
                   Data Analytics
                 </Typography>
-                {/* <hr /> */}
+                <hr />
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -161,7 +171,7 @@ export default function WorkPage() {
                 >
                   Database Management
                 </Typography>
-                {/* <hr /> */}
+                <hr />
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -187,7 +197,7 @@ export default function WorkPage() {
                 >
                   Application Support
                 </Typography>
-                {/* <hr /> */}
+                <hr />
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -212,7 +222,7 @@ export default function WorkPage() {
                 >
                   Network Engineering
                 </Typography>
-                {/* <hr /> */}
+                <hr />
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -238,7 +248,7 @@ export default function WorkPage() {
                 >
                   Mainframe Computing
                 </Typography>
-                {/* <hr /> */}
+                <hr />
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -262,7 +272,7 @@ export default function WorkPage() {
                 >
                   Web Development
                 </Typography>
-                {/* <hr /> */}
+                <hr />
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -286,7 +296,7 @@ export default function WorkPage() {
                 >
                   IT Support
                 </Typography>
-                {/* <hr /> */}
+                <hr />
                 <Typography
                   variant="body2"
                   gutterBottom
@@ -316,24 +326,10 @@ export default function WorkPage() {
           <Grid item sm={2}></Grid>
         </Grid>
 
-        {/* <Box className="geo-focus-img"> */}
-        {/* <Box pt={5}>
-            <Typography
-              variant="h3"
-              style={{ textAlign: "center", fontWeight: "900", color: "white" }}
-            >
-              Geographic Focus
-            </Typography>
-          </Box> */}
-        {/* </Box> */}
-
-        <Container>
-          <Box p={10}>
-            <Typography
-              variant="subtitle1"
-              gutterBottom
-              // style={{ textAlign: "center" }}
-            >
+        <Grid container mt={10} className="geo-paragraph-div">
+          <Grid item sm={2}></Grid>
+          <Grid item xs={12} sm={8}>
+            <Typography variant="subtitle1" gutterBottom>
               Our Associates are able to work on projects for clients throughout
               the US. We work virtually, at our customers premises, or in a
               hybrid framework. We are flexible to meet our customers' needs,
@@ -347,11 +343,12 @@ export default function WorkPage() {
               markets and we will partner as needed to deliver integrated
               offshore services.
             </Typography>
-          </Box>
-        </Container>
+          </Grid>
+          <Grid item sm={2}></Grid>
+        </Grid>
       </Container>
 
-      <Container className="offices-container" maxWidth="false">
+      <Container className="offices-container" maxWidth="false" id="o-location">
         <Typography
           variant="h3"
           className="offices-header"
@@ -360,7 +357,7 @@ export default function WorkPage() {
         >
           Offices
         </Typography>
-        <Grid container maxWidth="false" className="office-inner" spacing={6}>
+        <Grid container maxWidth="false" className="office-inner" spacing={5}>
           <Grid item xs={12} sm={3}>
             <Card className="w-office">
               <CardActionArea>
@@ -372,7 +369,11 @@ export default function WorkPage() {
                   title=""
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h6" component="h2">
+                  <Typography
+                    className="office-location-header"
+                    variant="h6"
+                    component="h2"
+                  >
                     West Coast
                   </Typography>
                   <Typography
@@ -381,9 +382,17 @@ export default function WorkPage() {
                     component="p"
                   >
                     Oakland, CA <br />
-                    west@consol-usa.com <br />
-                    (555) 555-5555
+                    {/* west@consol-usa.com <br />
+                    (555) 555-5555 */}
                   </Typography>
+                  <Button
+                    className="office-contact-btn"
+                    size="small"
+                    variant="contained"
+                    color="white"
+                  >
+                    <a href="../contact">Contact</a>
+                  </Button>
                 </CardContent>
               </CardActionArea>
             </Card>
@@ -400,7 +409,11 @@ export default function WorkPage() {
                   title=""
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h6" component="h2">
+                  <Typography
+                    className="office-location-header"
+                    variant="h6"
+                    component="h2"
+                  >
                     Mid-West
                   </Typography>
                   <Typography
@@ -409,9 +422,17 @@ export default function WorkPage() {
                     component="p"
                   >
                     Chicago, IL <br />
-                    midwest@consol-usa.com <br />
-                    (555) 555-5555
+                    {/* midwest@consol-usa.com <br />
+                    (555) 555-5555 */}
                   </Typography>
+                  <Button
+                    className="office-contact-btn"
+                    size="small"
+                    variant="contained"
+                    color="white"
+                  >
+                    <a href="../contact">Contact</a>
+                  </Button>
                 </CardContent>
               </CardActionArea>
             </Card>
@@ -428,7 +449,11 @@ export default function WorkPage() {
                   title=""
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h6" component="h2">
+                  <Typography
+                    className="office-location-header"
+                    variant="h6"
+                    component="h2"
+                  >
                     East Coast
                   </Typography>
                   <Typography
@@ -437,9 +462,17 @@ export default function WorkPage() {
                     component="p"
                   >
                     Dover, DE <br />
-                    east@consol-usa.com <br />
-                    (302) 401-6537
+                    {/* east@consol-usa.com <br />
+                    (302) 401-6537 */}
                   </Typography>
+                  <Button
+                    className="office-contact-btn"
+                    size="small"
+                    variant="contained"
+                    color="white"
+                  >
+                    <a href="../contact">Contact</a>
+                  </Button>
                 </CardContent>
               </CardActionArea>
             </Card>

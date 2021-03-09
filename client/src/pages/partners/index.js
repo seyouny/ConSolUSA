@@ -35,14 +35,19 @@ export default function PartnersPage() {
       <Banner></Banner>
 
       <Container className="partner-btns">
-        <div className="submenu">
-          <Grid container className="btns-container" maxWidth={false}>
-            <Grid item xs={12} sm={6} md={1}></Grid>
+        <div className="submenu1">
+          <Grid
+            container
+            spacing={1}
+            className="btns-container"
+            maxWidth="false"
+          >
+            <Grid item xs={0} sm={0} md={1}></Grid>
             <Grid item xs={12} sm={6} md={2}>
               <Button
-                size="small"
+                // size="small"
                 variant="outlined"
-                className="submenu-button btn-space"
+                className="submenu-button btn-space1"
                 href="#talent-sect"
               >
                 Talent
@@ -51,9 +56,9 @@ export default function PartnersPage() {
 
             <Grid item xs={12} sm={6} md={2}>
               <Button
-                size="small"
+                // size="small"
                 variant="outlined"
-                className="submenu-button btn-space"
+                className="submenu-button btn-space2"
                 href="#training-sect"
               >
                 Training
@@ -62,9 +67,9 @@ export default function PartnersPage() {
 
             <Grid item xs={12} sm={6} md={2}>
               <Button
-                size="small"
+                // size="small"
                 variant="outlined"
-                className="submenu-button btn-space"
+                className="submenu-button btn-space3"
                 href="#academic-sect"
               >
                 Academic
@@ -73,9 +78,9 @@ export default function PartnersPage() {
 
             <Grid item xs={12} sm={6} md={2}>
               <Button
-                size="small"
+                // size="small"
                 variant="outlined"
-                className="submenu-button btn-space"
+                className="submenu-button btn-space4"
                 href="#tech-sect"
               >
                 Technology
@@ -84,15 +89,15 @@ export default function PartnersPage() {
 
             <Grid item xs={12} sm={6} md={2}>
               <Button
-                size="small"
+                // size="small"
                 variant="outlined"
-                className="submenu-button btn-space"
+                className="submenu-button btn-space5"
                 href="#p-area"
               >
                 Government
               </Button>
             </Grid>
-            <Grid item xs={12} sm={6} md={1}></Grid>
+            <Grid item xs={0} sm={0} md={1}></Grid>
           </Grid>
         </div>
       </Container>
@@ -103,9 +108,9 @@ export default function PartnersPage() {
 
       <Academicpartners></Academicpartners>
 
-      <Technologypartners></Technologypartners>
+      {/* <Technologypartners></Technologypartners>
 
-      <Govpartners></Govpartners>
+      <Govpartners></Govpartners> */}
 
       <Container className={classes.pageDiv} maxWidth="false">
         <Grid container>
