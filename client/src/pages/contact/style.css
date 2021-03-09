@@ -1,12 +1,16 @@
 
 .contactForm {
     margin-top: 3em;
-    height: 55vh;
+    height: fit-content;
     margin-bottom: 6em;
     /* justify-items: center; */
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 6em;
+}
+
+.contactForm form {
+    width: 100%;
 }
 
 .contactForm:hover {
@@ -33,6 +37,13 @@ form {
 .formBox {
     padding: 10px;
     margin: 10px !important;
+    min-width: 190px;
+    height: 55px;
+}
+
+#region, #interest {
+    padding-left: 12%;
+    padding-top: 3%;
 }
 
 #submitBtn {

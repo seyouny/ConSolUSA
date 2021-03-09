@@ -1,10 +1,7 @@
 *,
-menu:after{
-  /* background:black; */
-}
-menu :before {
+*:after,
+*:before {
   box-sizing: border-box;
-  /* background-color: black; */
 }
 
 :root {
@@ -60,7 +57,7 @@ h1, h2 {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 0;
-  padding: 1%;
+  padding-top: .8rem;
   height: 3.75rem;
   line-height: 3.75rem;
   width: 100%;
@@ -136,14 +133,6 @@ h1, h2 {
   justify-items: center;
   display: block;
   margin: auto
-}
-
-.bigMargin {
-  width: 50%;
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-bottom: 5%;
-  display: block;
 }
 
 .submenu {
