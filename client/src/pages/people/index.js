@@ -22,6 +22,7 @@ import BlueArc from '../../components/bluearc';
 import MaroonArc from '../../components/maroonarc';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import StaffCards from '../../components/staffcards';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import './style.css';
@@ -117,10 +118,30 @@ export default function PeoplePage() {
 
       <PageGraphic></PageGraphic>
 
-      {/* ================= STAFF PHOTOS ================= */}
-      <Container id="staffContainer" maxWidth="false">
+      {/* ================= STAFF PHOTOS MAPPED VERSION================= */}
 
-        <Grid container spacing={1} id="staffCards">
+      <Container id="staffContainer" maxWidth={false}>
+
+        <Grid container spacing={1}>
+
+          <Grid item xs={12}>
+          <Typography 
+            variant="h3"
+            style={{ textAlign: "center", color: "white" }}
+          >Staff</Typography>
+          </Grid>
+  
+          <StaffCards></StaffCards>
+
+        </Grid>
+
+      </Container>
+
+      {/* ================= STAFF PHOTOS ================= */}
+
+      <Container id="staffContainer2" maxWidth={false}>
+
+        <Grid container spacing={1} id="staffCards2">
 
         <Grid item xs={12}>
         <Typography 
