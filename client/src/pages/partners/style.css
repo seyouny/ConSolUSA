@@ -1,11 +1,15 @@
 .submenu {
-  margin-left: 20%;
-  margin-right: 20%;
+  /* margin-left: 20%;
+  margin-right: 20%; */
 }
 
-.btn-space {
-  max-width: 150px;
+.submenu1 {
+  position: sticky;
+  text-align: center;
+  margin: 40px 10%;
+  /* margin: 40px 25% 0 25%; */
 }
+
 /* @media (min-width:960px) {
   .MuiGrid-grid-md-2 .btn-space {
     flex-grow: 0;
@@ -25,10 +29,10 @@
   
 }
 
-.button-container {
+/* .button-container {
   display: flex;
   justify-content: center;
-}
+} */
 
 .pop-div {
   display: flex;
