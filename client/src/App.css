@@ -1,7 +1,10 @@
 *,
-*:after,
-*:before {
+menu:after{
+  /* background:black; */
+}
+menu :before {
   box-sizing: border-box;
+  /* background-color: black; */
 }
 
 :root {
@@ -57,7 +60,7 @@ h1, h2 {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 0;
-  padding-top: .8rem;
+  padding: 1%;
   height: 3.75rem;
   line-height: 3.75rem;
   width: 100%;
