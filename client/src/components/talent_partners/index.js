@@ -75,7 +75,7 @@ export default function Talentpartners () {
                   <Button
                     size="small"
                     aria-describedby={id}
-                    variant="contained"
+                    variant="outlined"
                     color="white"
                     onClick={handleClick}
                   >

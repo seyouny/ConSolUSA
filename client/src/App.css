@@ -121,6 +121,7 @@ h1, h2 {
 }
 
 .section {
+  width: 100%;
   padding-top: 3%;
   padding-left: 8%;
   padding-right: 8%;

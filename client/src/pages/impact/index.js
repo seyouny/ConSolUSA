@@ -9,6 +9,10 @@ import Paper from '@material-ui/core/Paper';
 import Banner from '../../components/banner/';
 import ecosystem from './ecosystem.jpg';
 import impactchain from './impactchain.jpg';
+import impactchain1 from './impactchain1.png';
+import impactchain2 from './impactchain2.png';
+import impactchain3 from './impactchain3.png';
+import impactchain4 from './impactchain4.png';
 import statbar from './statbar.png';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -47,13 +51,13 @@ export default function ImpactPage() {
 
             </Container>
 
-            <Container id="mission" className="section">
+            <Container className="section">
 
-                <Paper elevation={0} variant="outlined" className="bigMargin">
+                <Paper elevation={0} variant="outlined" id="mission">
 
                     <Grid container spacing={1}>
 
-                        <Grid item xs={12}>
+                        <Grid item xs={12} id="missionBox">
 
                             <Typography variant="h3" className="sectionHead">Our Mission</Typography>
                             <Typography variant="body1">
@@ -81,7 +85,7 @@ export default function ImpactPage() {
 
                             <Typography variant="h3" className="sectionHead">Our Ecosystem</Typography>
 
-                                <img alt="ecosystem" src={ecosystem} width="80%"/>
+                                <img alt="ecosystem" src={ecosystem} width="100%"/>
 
                         </Grid>
 
@@ -117,11 +121,14 @@ export default function ImpactPage() {
 
                     <Grid container spacing={1}>
 
-                        <Grid item xs={12}>
+                        <Grid item xs={12} id="impactChainBox">
 
                             <Typography variant="h3" className="sectionHead">Our Impact Chain</Typography>
 
-                                <img alt="impact chain" src={impactchain} width="85%" />
+                                <img alt="impact chain 1" src={impactchain1} width="20%" id="impactChain1" />
+                                <img alt="impact chain 2" src={impactchain2} width="20%" id="impactChain2" />
+                                <img alt="impact chain 3" src={impactchain3} width="20%" id="impactChain3" />
+                                <img alt="impact chain 4" src={impactchain4} width="20%" id="impactChain4" />
 
                         </Grid>
 
