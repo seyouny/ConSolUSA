@@ -10,7 +10,7 @@ $ npm install react-items-carousel --save
 
 # Example
 
-```javascript
+<!-- ```javascript
 import React, { useState } from 'react';
 import ItemsCarousel from 'react-items-carousel';
 
@@ -37,7 +37,7 @@ export default () => {
     </div>
   );
 };
-```
+``` -->
 
 # Component Props
 
