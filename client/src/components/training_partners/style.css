@@ -1,31 +1,35 @@
-.talent-card-container {
+.training-card-container {
   padding: 0 30px !important;
-  margin-bottom: 15rem;
-  margin-top: 3rem;
+  /* margin-bottom: 10rem; */
+  /* margin-top: 3rem; */
+  background-color: #dd690c;
 }
 
-.talent-area-header {
-  padding-bottom: 1rem;
-  color: #164e85;
+.training-area-header {
+  /* padding-bottom: 1rem; */
+  padding-top: 2rem;
+  color: #fff;
 }  
 
-.logo-grid {
-    /* margin-top: 4rem; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border-style: solid;
-    border-color: blue;
-    border-width: 1px; */
+.train-orange-arc-bottom {
+  transform: rotate(180deg);
+}
+
+.MuiContainer-maxWidthLg {
+  padding-bottom: 30px;
+}
+
+.train-card {
+  padding: 30px 30px 10px 30px;
 }
 
 .train-logo1 {
-    max-height: 55px;
+    max-height: 50px;
     width: auto;
 }
 
 .train-logo2 {
-    max-height: 70px;
+    max-height: 60px;
     width: auto;
 }
 

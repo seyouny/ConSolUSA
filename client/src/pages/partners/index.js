@@ -42,8 +42,8 @@ export default function PartnersPage() {
             className="btns-container"
             maxWidth="false"
           >
-            <Grid item xs={0} sm={0} md={1}></Grid>
-            <Grid item xs={12} sm={6} md={2}>
+            {/* <Grid item xs={0} sm={0} md={1}></Grid> */}
+            <Grid item xs={12} sm={4}>
               <Button
                 // size="small"
                 variant="outlined"
@@ -54,7 +54,7 @@ export default function PartnersPage() {
               </Button>
             </Grid>
 
-            <Grid item xs={12} sm={6} md={2}>
+            <Grid item xs={12} sm={4}>
               <Button
                 // size="small"
                 variant="outlined"
@@ -65,7 +65,7 @@ export default function PartnersPage() {
               </Button>
             </Grid>
 
-            <Grid item xs={12} sm={6} md={2}>
+            <Grid item xs={12} sm={4}>
               <Button
                 // size="small"
                 variant="outlined"
@@ -76,7 +76,7 @@ export default function PartnersPage() {
               </Button>
             </Grid>
 
-            <Grid item xs={12} sm={6} md={2}>
+            {/* <Grid item xs={12} sm={6}>
               <Button
                 // size="small"
                 variant="outlined"
@@ -85,9 +85,9 @@ export default function PartnersPage() {
               >
                 Technology
               </Button>
-            </Grid>
+            </Grid> */}
 
-            <Grid item xs={12} sm={6} md={2}>
+            {/* <Grid item xs={12} sm={6}>
               <Button
                 // size="small"
                 variant="outlined"
@@ -96,8 +96,8 @@ export default function PartnersPage() {
               >
                 Government
               </Button>
-            </Grid>
-            <Grid item xs={0} sm={0} md={1}></Grid>
+            </Grid> */}
+            {/* <Grid item xs={0} sm={0} md={1}></Grid> */}
           </Grid>
         </div>
       </Container>
@@ -112,7 +112,7 @@ export default function PartnersPage() {
 
       <Govpartners></Govpartners> */}
 
-      <Container className={classes.pageDiv} maxWidth="false">
+      {/* <Container className={classes.pageDiv} maxWidth="false">
         <Grid container>
           <Grid item xs={12} className="workPageBreak">
             <img
@@ -122,7 +122,7 @@ export default function PartnersPage() {
             ></img>
           </Grid>
         </Grid>
-      </Container>
+      </Container> */}
     </div>
   );
 }

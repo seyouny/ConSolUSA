@@ -9,6 +9,7 @@ import Merritt from "./merrittcollege.png";
 import Mills from "./millscollege_logo.png";
 
 import "./style.css";
+import { Card } from "@material-ui/core";
 
 const InfoType = withStyles((theme) => ({
   tooltip: {
@@ -32,7 +33,7 @@ export default function Academicpartners () {
           >
             Academic Partners
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body1"
             style={{
               textAlign: "center",
@@ -44,10 +45,10 @@ export default function Academicpartners () {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
-          </Typography>
+          </Typography> */}
 
-          <Grid container spacing={5}>
-            {/* <Grid item xs={12} sm={3}></Grid> */}
+          <Grid container spacing={1}>
+            <Grid item xs={12} sm={3}></Grid>
             <Grid
               item
               xs={12}
@@ -56,57 +57,30 @@ export default function Academicpartners () {
               container
               direction="column"
             >
-              <img src={Merritt} alt="logo" className="academic-logo1" />
-              <Container>
-                <div className="pop-div">
-                  <InfoType
-                    title={
-                      <React.Fragment>
-                        <Typography color="inherit"></Typography>
-                        {
-                          "The mission of Merritt College is to enhance the quality of life in the communities we serve by helping students to attain knowledge, master skills, and develop the appreciation, attitudes and values needed to succeed and participate responsibly in a democratic society and a global economy."
-                        }
-                      </React.Fragment>
-                    }
-                  >
-                    <Button size="small" variant="outlined">
-                      INFO
-                    </Button>
-                  </InfoType>
-                </div>
-              </Container>
+              <Card elevation={3} className="academic-card">
+                <p style={{ textAlign: "center" }}>
+                  <img src={Merritt} alt="logo" className="academic-logo1" />
+                </p>
+                <Container>
+                  <div className="pop-div">
+                    <InfoType
+                      title={
+                        <React.Fragment>
+                          <Typography color="inherit"></Typography>
+                          {
+                            "The mission of Merritt College is to enhance the quality of life in the communities we serve by helping students to attain knowledge, master skills, and develop the appreciation, attitudes and values needed to succeed and participate responsibly in a democratic society and a global economy."
+                          }
+                        </React.Fragment>
+                      }
+                    >
+                      <Button size="small" variant="outlined">
+                        INFO
+                      </Button>
+                    </InfoType>
+                  </div>
+                </Container>
+              </Card>
             </Grid>
-
-            {/* <Grid
-              item
-              xs={12}
-              sm={3}
-              className="logo-grid"
-              container
-              direction="column"
-            >
-              <img src={Mills} alt="logo" className="academic-logo2" />
-              <Container>
-                <div className="pop-div">
-                  <InfoType
-                    title={
-                      <React.Fragment>
-                        <Typography color="inherit"></Typography>
-                        {
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                        }
-                      </React.Fragment>
-                    }
-                  >
-                    <Button size="small" variant="outlined">
-                      INFO
-                    </Button>
-                  </InfoType>
-                </div>
-              </Container>
-            </Grid> */}
-
-            {/* <Grid item xs={12} sm={3}></Grid> */}
           </Grid>
         </Container>
       </div>
