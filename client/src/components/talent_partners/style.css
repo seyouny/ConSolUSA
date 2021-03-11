@@ -1,6 +1,6 @@
 .talent-card-container {
   padding: 0 30px !important;
-  margin-bottom: 15rem;
+  /* margin-bottom: 10rem; */
   margin-top: 3rem;
 }
 
@@ -9,8 +9,16 @@
   color: #164e85;
 }  
 
+/* .talent-paper {
+  padding: 40px;
+} */
+
+.talent-card {
+  padding: 30px 30px 10px 30px;
+}
+
 .talent-logo1 {
-    max-height: 60px;
+    max-height: 50px;
     width: auto;
 }
 
