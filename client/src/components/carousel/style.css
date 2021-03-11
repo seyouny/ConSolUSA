@@ -62,19 +62,20 @@
 }
 
 .slide {
-    transition: 2s ease-in-out;
-    animation: slide 1s forwards ease;
-    -webkit-animation: slide 1s forwards;
+    transition: 2s ease;
+    animation: scale 2s forwards ease;
+    -webkit-animation: scale 2s forwards;
 }
 
-@keyframes slide {
+.slide:hover {
+}
+
+@keyframes scale {
     from {
-      transform: translate(-100%);
-      left: 0;
+      transform: scale(1);
     }
     to {
-      transform: translate(0);
-      left: 50%;
+      transform: scale(1.1);
     }
 }
   

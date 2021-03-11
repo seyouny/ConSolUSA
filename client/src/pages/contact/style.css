@@ -29,7 +29,7 @@
 }
 
 form {
-    margin-top: 10px;
+    margin: 20px;
     display: inline-block;
     flex-wrap: wrap;
 }
@@ -41,12 +41,22 @@ form {
     height: 55px;
 }
 
+.message {
+    width: 65%;
+}
+
 #region, #interest {
     padding-left: 12%;
     padding-top: 3%;
 }
 
 #submitBtn {
-    /* position: relative; */
-    transform: translate(600%, -135%)
+    position: relative;
+    transform: translate(20%, 30%)
+}
+
+@media screen and (max-width: 768px) {
+    #submitBtn {
+        transform: translate(-300%, 400%)
+    }
 }
