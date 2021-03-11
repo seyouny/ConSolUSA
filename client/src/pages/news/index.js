@@ -50,7 +50,7 @@ export default function NewsPage() {
 
                             <Grid item xs={12}>
 
-                                <Typography variant="h3">News</Typography>
+                                <Typography variant="h3">Press Release</Typography>
                                 <Typography variant="body1">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 euismod in pellentesque. Pellentesque id nibh tortor id aliquet lectus proin.

@@ -41,6 +41,10 @@ iframe {
     margin: auto;    
 }
 
+#impactChainTextBox {
+    padding-top: 10px;
+}
+
 #impactChain1 {
     z-index: 4;
     transition: 2s ease;

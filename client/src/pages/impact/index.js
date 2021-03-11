@@ -122,35 +122,35 @@ export default function ImpactPage() {
 
                             <Grid item xs={4} sm={6} md={12} id="impactChainGraphicBox">
 
-                                <img alt="impact chain 1" src={impactchain1} width="20%" id="impactChain1" />
-                                <img alt="impact chain 2" src={impactchain2} width="20%" id="impactChain2" />
-                                <img alt="impact chain 3" src={impactchain3} width="20%" id="impactChain3" />
-                                <img alt="impact chain 4" src={impactchain4} width="20%" id="impactChain4" />
+                                <img alt="impact chain 1" src={impactchain1} width="25%" id="impactChain1" />
+                                <img alt="impact chain 2" src={impactchain2} width="25%" id="impactChain2" />
+                                <img alt="impact chain 3" src={impactchain3} width="25%" id="impactChain3" />
+                                <img alt="impact chain 4" src={impactchain4} width="25%" id="impactChain4" />
 
                             </Grid>
 
-                            <Grid item >
+                            <Grid container id="impactChainTextBox">
 
-                                <Grid item>
-                                    <Typography variant="body" className="impactChainText">
+                                <Grid item xs={12} sm={12} md={3}>
+                                    <Typography variant="body" component="h5" className="impactChainText">
                                         Outsourcing contract defines services & delivery requirements
                                     </Typography>
                                 </Grid>
 
-                                <Grid item>
-                                    <Typography variant="body" className="impactChainText">
+                                <Grid item xs={12} sm={12} md={3}>
+                                    <Typography variant="body" component="h5" className="impactChainText">
                                     We recruit, train and accredit local talent with academic partners
                                     </Typography>
                                 </Grid>
 
-                                <Grid item>
-                                    <Typography variant="body" className="impactChainText">
+                                <Grid item xs={12} sm={12} md={3}>
+                                    <Typography variant="body" component="h5" className="impactChainText">
                                         We deploy teams virtually or onsite with clients
                                     </Typography>
                                 </Grid>
 
-                                <Grid item>
-                                    <Typography variant="body" className="impactChainText">
+                                <Grid item xs={12} sm={12} md={3}>
+                                    <Typography variant="body" component="h5" className="impactChainText">
                                         We create operational and social value for corporate customers
                                     </Typography>
                                 </Grid>
