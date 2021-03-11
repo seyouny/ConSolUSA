@@ -15,6 +15,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import PageBreak from "./divider_blue_orange.png";
 // import Divider from "../../components/divider";
 import { makeStyles } from "@material-ui/core/styles";
+import Geovideo from "../../components/geovideo/";
 import "./style.css";
 import { GridContainer } from "react-foundation";
 
@@ -320,9 +321,12 @@ export default function WorkPage() {
         >
           Geographic Focus
         </Typography>
-        <Grid container>
+        <Grid container maxWidth={false}>
           <Grid item sm={2}></Grid>
-          <Grid item xs={12} sm={8} className="geo-focus-img"></Grid>
+          {/* <Grid item xs={12} sm={8} className="geo-focus-img"></Grid> */}
+          <Grid item xs={12}>
+            <Geovideo></Geovideo>
+          </Grid>
           <Grid item sm={2}></Grid>
         </Grid>
 

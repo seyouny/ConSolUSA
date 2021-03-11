@@ -37,6 +37,7 @@
     "material-auto-rotating-carousel": "^3.0.2",
     "react-foundation": "^0.9.6",
     "react-icons": "^4.2.0",
+    "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-swipeable-views": "^0.13.9"
   }
