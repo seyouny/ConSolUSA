@@ -91,7 +91,6 @@ h1, h2 {
 .menu li:hover {
   transition: box-shadow .3s;
   box-shadow: 0 0 11px #44719d; 
-  transition: ease-in-out;
   box-shadow: 0 0 1px 1px rgba(255, 255, 255, .5);
   border-radius: 50% / 10%;
   background-image: linear-gradient(to right, #dd690c 0%, #e37c0e 51%, #efa313 100%);
