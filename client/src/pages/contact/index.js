@@ -8,7 +8,8 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Banner from '../../components/banner/';
 import TextField from '@material-ui/core/TextField';
-import PageBreak from "./page_graphic_blue_orange.png";
+// import PageBreak from "./page_graphic_blue_orange.png";
+import PageBreak from "../work/divider_blue_orange.png";
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -24,21 +25,25 @@ init("user_HwMXwEHp0KORxnvgNKatv");
 
 
 const useStyles = makeStyles({
-    pageDiv: {
-      paddingLeft: "0",
-      paddingRight: "0",
-    },
-    divImage: {
-      width: "100%",
-      marginTop: "-50%",
-    //   paddingTop: "-105px",
-      zIndex: "100",
-    },
-    formControl: {
-        margin: 1,
-        width: "200px",
-    },
-  });
+  pageDiv: {
+    paddingLeft: "0",
+    paddingRight: "0",
+  },
+  // divImage: {
+  //   width: "100%",
+  //   marginTop: "-50%",
+  //   zIndex: "100",
+  // },
+  divImage: {
+    width: "100%",
+    height: "100%",
+    marginTop: "0"
+  },
+  formControl: {
+    margin: 1,
+    width: "200px",
+  },
+});
 
 export default function ContactPage() {
 
@@ -238,7 +243,7 @@ export default function ContactPage() {
 
             </Container>
 
-            <Container className={classes.pageDiv} maxWidth={false}>
+            <Container className={classes.pageDiv} maxWidth="false">
                 <Grid container>
                     <Grid item xs={12}>
                         <img

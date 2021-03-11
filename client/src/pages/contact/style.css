@@ -2,11 +2,12 @@
 .contactForm {
     margin-top: 3em;
     height: fit-content;
-    margin-bottom: 6em;
+    /* margin-bottom: 6em; */
     /* justify-items: center; */
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 6em;
+    margin-bottom: -6rem;
 }
 
 .contactForm form {
@@ -26,6 +27,10 @@
 .contactHead * {
     margin-top: 0;
     padding-top: 0;
+}
+
+.MuiContainer-maxWidthLg {
+    padding-bottom: 0;
 }
 
 form {
