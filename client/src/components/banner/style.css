@@ -10,33 +10,6 @@ h1 {
   text-align: right;
 }
 
-
-/* STICKY SHRINK NAVBAR */
-
-.sticky-shrinknav-menu {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    top: 0;
-    padding-top: .8rem;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    width: 100%;
-    transition: all 0.5s ease;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-  }
-  
-  .sticky-shrinknav-menu {
-    display: inline;
-    padding: 0px 60px 0px 60px;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-  }
-
   .brand img hover {
     box-shadow: 0 0 0 1px #fefefe;
   }

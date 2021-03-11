@@ -1,4 +1,7 @@
+import React from 'react'
 import MenuIcon from '@material-ui/icons/Menu';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import HomePage from './pages/home/';
 import PeoplePage from './pages/people/';
 import ImpactPage from './pages/impact/';
@@ -7,6 +10,7 @@ import PartnersPage from './pages/partners/';
 import NewsPage from './pages/news/';
 import ContactPage from './pages/contact/';
 import Footer from './components/footer/index';
+import Link from '@material-ui/core/Link';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -34,26 +38,28 @@ const theme = createMuiTheme({
 
 function App() {
 
-  function handleMenuClick() {
-    $('#menuIcon').on('click', function () {
-      var menuItems = $('ul');
-      if (menuItems.className === 'hide') {
-        menuItems.className += 'show';
-      } else {
-        menuItems.className = 'hide'
-      }
-      console.log("Menu icon clicked")
-    })
-  }
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleMenuClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  
   window.onscroll = function () { scrollFunction() };
 
   function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("menu").style.backgroundColor = "black";
+        // document.getElementById("menu").style.backgroundColor = "black";
+        document.getElementById("menu").classList.add('mobileMenu');
 
     }
     else{
-        document.getElementById("menu").style.backgroundColor = "transparent";
+        document.getElementById("menu").classList.remove('mobileMenu');
+        // document.getElementById("menu").style.backgroundColor = "transparent";
 
     }
   }
@@ -66,7 +72,6 @@ function App() {
         <Router>
 
           <nav id='navBar' className="header-outer">
-            {/* <Banner></Banner> */}
             <div id="smallScreenNavBar" className="hideOnMedUp header-inner responsive-wrapper">
               <MenuIcon id="menuIcon" className="hideOnMedUp" onClick={handleMenuClick}></MenuIcon></div>
             <ul className="menu" id='menu'>
@@ -90,6 +95,21 @@ function App() {
               </li>
             </ul>
           </nav>
+
+          <Menu
+            id="simple-menu"
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+          >
+            <MenuItem><a href="/">Home</a></MenuItem>
+            <MenuItem><a href="/people">People</a></MenuItem>
+            <MenuItem><a href="/work">Work</a></MenuItem>
+            <MenuItem><a href="/impact">Impact</a></MenuItem>
+            <MenuItem><a href="/partners">Partners</a></MenuItem>
+            <MenuItem><a href="/contact">Contact</a></MenuItem>
+          </Menu>
 
           <Switch>
 
