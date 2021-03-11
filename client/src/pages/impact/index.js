@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Banner from '../../components/banner/';
+import ConsolWayVideo from '../../components/consolway/';
 import ecosystem from './ecosystem.jpg';
 import impactchain from './impactchain.jpg';
 import impactchain1 from './impactchain1.png';
@@ -97,46 +98,68 @@ export default function ImpactPage() {
 
             <Container className="section carouselBkg" maxWidth={false}>
 
-                <Paper elevation={3} id="slider">
-
                     <Grid container spacing={1}>
 
                         <Grid item xs={12}>
 
-                            <Typography variant="h3" className="sectionHead" id="partnerHead">Partners</Typography>
-                                <ArrowBackIosIcon id="arrowLeft"></ArrowBackIosIcon>
-                                <ArrowForwardIosIcon id="arrowRight"></ArrowForwardIosIcon>
+                            <ConsolWayVideo></ConsolWayVideo>
 
                         </Grid>
 
                     </Grid>
 
-                </Paper>
-
             </Container>
 
-            <Container id="impactChain" className="section">
 
-                <Paper elevation={0}>
+                <Container id="impactChain" className="section">
 
                     <Grid container spacing={1}>
 
-                        <Grid item xs={12} id="impactChainBox">
 
-                            <Typography variant="h3" className="sectionHead">Our Impact Chain</Typography>
+                            <Grid item xs={12}>
+                                    <Typography variant="h3" className="sectionHead">Our Impact Chain</Typography>
+                            </Grid>
+
+                            <Grid item xs={4} sm={6} md={12} id="impactChainGraphicBox">
 
                                 <img alt="impact chain 1" src={impactchain1} width="20%" id="impactChain1" />
                                 <img alt="impact chain 2" src={impactchain2} width="20%" id="impactChain2" />
                                 <img alt="impact chain 3" src={impactchain3} width="20%" id="impactChain3" />
                                 <img alt="impact chain 4" src={impactchain4} width="20%" id="impactChain4" />
 
-                        </Grid>
+                            </Grid>
+
+                            <Grid item >
+
+                                <Grid item>
+                                    <Typography variant="body" className="impactChainText">
+                                        Outsourcing contract defines services & delivery requirements
+                                    </Typography>
+                                </Grid>
+
+                                <Grid item>
+                                    <Typography variant="body" className="impactChainText">
+                                    We recruit, train and accredit local talent with academic partners
+                                    </Typography>
+                                </Grid>
+
+                                <Grid item>
+                                    <Typography variant="body" className="impactChainText">
+                                        We deploy teams virtually or onsite with clients
+                                    </Typography>
+                                </Grid>
+
+                                <Grid item>
+                                    <Typography variant="body" className="impactChainText">
+                                        We create operational and social value for corporate customers
+                                    </Typography>
+                                </Grid>
+
+                            </Grid>
 
                     </Grid>
 
-                </Paper>
-
-            </Container>
+                </Container>
 
             <Container id="stats" className="section">
 

@@ -19,26 +19,28 @@
 
 .columnLeft {
     float: left;
-    width: 50%;
     text-align: left;
-    padding-right: 5%;
+    margin-right: 30%;
+    padding-right: 30%;
 }
 
 .columnMiddle {
     float: left;
-    width: 25%;
     text-align: left;
 }
 
 .columnRight {
     float: left;
-    width: 10%;
     text-align: left;
+}
+
+#footerContent {
+    margin-top: 3%;
 }
 
 .icon {
     position: relative;
-    /* Adjust these values accordingly */
+    font-size: 22px;
     top: 8px;
     left: 0;
     padding-right: 5px;

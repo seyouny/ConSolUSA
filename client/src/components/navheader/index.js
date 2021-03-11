@@ -9,9 +9,9 @@ export default function NavHeader () {
     <div>
 
       <nav>
-      <header className = "sticky-shrinknav-header">
+      <header>
 
-      <div id="smallScreenNavBar" className="menu align-center sticky-shrinknav-menu">
+      <div id="smallScreenNavBar" className="menu align-center">
         <MenuIcon id="menuIcon" className="hideOnMedUp" onClick={handleMenuClick}></MenuIcon></div>
           <ul className="menu">
             <li>
