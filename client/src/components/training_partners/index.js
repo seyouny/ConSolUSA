@@ -62,7 +62,7 @@ export default function Trainingpartners() {
 
     return (
       <div>
-        <Grid container>
+        {/* <Grid container>
           <Grid item xs={12} className="workPageBreak">
             <img
               className={classes.divImage}
@@ -70,7 +70,7 @@ export default function Trainingpartners() {
               alt="page graphic"
             ></img>
           </Grid>
-        </Grid>
+        </Grid> */}
 
         <Container
           className="training-card-container"
@@ -108,7 +108,7 @@ export default function Trainingpartners() {
                 container
                 direction="column"
               >
-                <Card elevation={3} className="train-card">
+                <Card elevation={0} className="train-card">
                   <img src={Perscholas} alt="logo" className="train-logo1" />
                   <Container>
                     <div className="pop-div">
@@ -139,7 +139,7 @@ export default function Trainingpartners() {
                 container
                 direction="column"
               >
-                <Card elevation={3} className="train-card">
+                <Card elevation={0} className="train-card">
                   <img src={Bayvalleytech} alt="logo" className="train-logo2" />
                   <Container>
                     <div className="pop-div">
@@ -170,7 +170,7 @@ export default function Trainingpartners() {
                 container
                 direction="column"
               >
-                <Card elevation={3} className="train-card">
+                <Card elevation={0} className="train-card">
                   <img src={Npower} alt="logo" className="train-logo3" />
                   <Container>
                     <div className="pop-div">
@@ -196,7 +196,7 @@ export default function Trainingpartners() {
           </Container>
         </Container>
 
-        <Grid container>
+        {/* <Grid container>
           <Grid item xs={12} className="train-orange-arc-bottom">
             <img
               className={classes.divImage}
@@ -204,7 +204,7 @@ export default function Trainingpartners() {
               alt="page graphic"
             ></img>
           </Grid>
-        </Grid>
+        </Grid> */}
       </div>
     );
 }

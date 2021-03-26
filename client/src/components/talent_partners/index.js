@@ -81,7 +81,7 @@ export default function Talentpartners () {
               container
               direction="column"
             >
-              <Card elevation={3} className="talent-card">
+              <Card elevation={0} className="talent-card">
                 <img src={GenUSA} alt="logo" className="talent-logo1" />
                 <Container>
                   <div className="pop-div">
@@ -113,7 +113,7 @@ export default function Talentpartners () {
               container
               direction="column"
             >
-              <Card elevation={3} className="talent-card">
+              <Card elevation={0} className="talent-card">
                 <img src={Yearup} alt="logo" className="talent-logo2" />
                 <Container>
                   <div className="pop-div">
@@ -145,7 +145,7 @@ export default function Talentpartners () {
               container
               direction="column"
             >
-              <Card elevation={3} className="talent-card">
+              <Card elevation={0} className="talent-card">
                 <img src={Genesys} alt="logo" className="talent-logo3" />
                 <Container>
                   <div className="pop-div">
@@ -177,7 +177,7 @@ export default function Talentpartners () {
               container
               direction="column"
             >
-              <Card elevation={3} className="talent-card">
+              <Card elevation={0} className="talent-card">
                 <img src={Npower} alt="logo" className="talent-logo4" />
                 <Container>
                   <div className="pop-div">

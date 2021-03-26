@@ -57,7 +57,7 @@ export default function Academicpartners () {
               container
               direction="column"
             >
-              <Card elevation={3} className="academic-card">
+              <Card elevation={0} className="academic-card">
                 <p style={{ textAlign: "center" }}>
                   <img src={Merritt} alt="logo" className="academic-logo1" />
                 </p>
