@@ -61,6 +61,11 @@ hr {
   /* background-color: aquamarine; */
 }
 
+#proj-box:hover {
+  transform: scale(1.15);
+  transition: 2s ease;
+}
+
 .proj-type {
   padding: 15px;
   /* padding-bottom: 10px; */
@@ -77,6 +82,7 @@ hr {
 
 .proj-card-container {
   background-color: #164e85;
+  padding-bottom: 5rem;
   
   /* padding: 0 30px !important; */
   /* margin-bottom: 10rem; */
@@ -111,7 +117,7 @@ hr {
 }
 
 .geo-focus-container {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .offices-container {

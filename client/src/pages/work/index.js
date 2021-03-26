@@ -96,7 +96,7 @@ export default function WorkPage() {
 
           <Grid container spacing={5}>
             <Grid item xs={12} sm={6} md={4}>
-              <Paper>
+              <Paper id="proj-box">
                 <Box className="proj-card">
                   <Typography
                     variant="h6"
@@ -123,7 +123,7 @@ export default function WorkPage() {
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <Paper>
+              <Paper id="proj-box">
                 <Box className="proj-card">
                   <Typography
                     variant="h6"
@@ -149,7 +149,7 @@ export default function WorkPage() {
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <Paper>
+              <Paper id="proj-box">
                 <Box className="proj-card">
                   <Typography
                     variant="h6"
@@ -174,7 +174,7 @@ export default function WorkPage() {
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <Paper>
+              <Paper id="proj-box">
                 <Box className="proj-card">
                   <Typography
                     variant="h6"
@@ -200,7 +200,7 @@ export default function WorkPage() {
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <Paper>
+              <Paper id="proj-box">
                 <Box className="proj-card">
                   <Typography
                     variant="h6"
@@ -226,7 +226,7 @@ export default function WorkPage() {
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <Paper>
+              <Paper id="proj-box">
                 <Box className="proj-card">
                   <Typography
                     variant="h6"
@@ -252,7 +252,7 @@ export default function WorkPage() {
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <Paper>
+              <Paper id="proj-box">
                 <Box className="proj-card">
                   <Typography
                     variant="h6"
@@ -276,7 +276,7 @@ export default function WorkPage() {
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <Paper>
+              <Paper id="proj-box">
                 <Box className="proj-card">
                   <Typography
                     variant="h6"
@@ -300,7 +300,7 @@ export default function WorkPage() {
             </Grid>
 
             <Grid item xs={12} sm={6} md={4}>
-              <Paper>
+              <Paper id="proj-box">
                 <Box className="proj-card">
                   <Typography
                     variant="h6"
@@ -375,6 +375,26 @@ export default function WorkPage() {
           <Grid item sm={2}></Grid>
         </Grid>
       </Container>
+
+      <Grid container>
+        <Grid item xs={12} className="workPageBreak">
+          <img
+            className={classes.divImage}
+            src={BlueArc}
+            alt="page graphic"
+          ></img>
+        </Grid>
+      </Grid>
+
+      <Grid container>
+        <Grid item xs={12} className="proj-blue-arc-bottom">
+          <img
+            className={classes.divImage}
+            src={BlueArc}
+            alt="page graphic"
+          ></img>
+        </Grid>
+      </Grid>
 
       <Container className="offices-container" maxWidth="false" id="o-location">
         <Typography
@@ -505,7 +525,6 @@ export default function WorkPage() {
             </Grid>
           </Grid>
         </Container>
-      
       </Container>
 
       {/* <Container className={classes.pageDiv} maxWidth="false">

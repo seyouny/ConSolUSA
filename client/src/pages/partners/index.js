@@ -14,6 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import PageBreak from "../work/divider_blue_orange.png";
 
 import "./style.css";
+import OrangeArc from "../../components/orangearc";
 
 const useStyles = makeStyles({
   pageDiv: {
@@ -34,8 +35,8 @@ export default function PartnersPage() {
     <div>
       <Banner></Banner>
 
-      <Container className="partner-btns">
-        <div className="submenu1">
+      <Container className="proj-btns top-btns">
+        <div className="submenu">
           <Grid
             container
             spacing={1}
@@ -104,7 +105,11 @@ export default function PartnersPage() {
 
       <Talentpartners></Talentpartners>
 
+      <OrangeArc></OrangeArc>
+
       <Trainingpartners></Trainingpartners>
+
+      <OrangeArc></OrangeArc>
 
       <Academicpartners></Academicpartners>
 
